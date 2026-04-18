@@ -425,58 +425,98 @@ body {
 .social-icons a:hover {
   opacity: 1;
 }
+/* ===================================== */
+/* MOBILE TOP BAR - CLEAN PROFESSIONAL UI */
+/* ===================================== */
 
 @media (max-width: 768px) {
 
+  /* TOP BAR CONTAINER */
   .top-bar {
+    display: flex;
     flex-direction: column;
-    gap: 8px;
-    text-align: center;
-    align-items: center; /* center all items */
+    align-items: center;
+    padding: 4px 8px !important;
+    gap: 6px;
+    background: #f4eee6;
   }
 
-  /* Contact section stacked neatly */
+  /* CONTACT ROW (PHONE + EMAIL IN ONE LINE) */
   .contact {
     display: flex;
-    flex-direction: column; /* stack phone, email, whatsapp vertically */
-    gap: 4px;               /* spacing between items */
+    flex-direction: row !important;
+    justify-content: center;
     align-items: center;
-    font-size: 14px;
+    gap: 8px;
+    flex-wrap: nowrap;   /* 🔥 keep in one line */
   }
 
-  .contact span,
-  .contact div {
-    margin: 0;
+  /* CONTACT ITEMS */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ /*   background: #ffffff;*/
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    line-height: 1;
+    white-space: nowrap;   /* 🔥 no wrapping */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
   }
 
-  /* Social icons centered and visible */
+  /* ICON SIZE */
+  .contact-item i {
+    font-size: 12px;
+  }
+
+  /* WHATSAPP BUTTON (SEPARATE ROW) */
+  .contact-item.whatsapp {
+    background: #25D366;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-top: 2px;
+  }
+
+  .contact-item.whatsapp i {
+    color: #fff;
+  }
+
+  /* SOCIAL ICONS ROW */
   .social-ico {
     display: flex;
     justify-content: center;
-    gap: 12px;           /* space between icons */
-    font-size: 20px;     /* ensure icons are visible */
-    color: #4e3f36;      /* Font Awesome color */
+    gap: 10px;
+    margin-top: 2px;
   }
 
-  /* Ensure icons are not hidden by flex direction */
   .social-ico a {
-    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  /*  background: #ffffff;*/
+    display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 13px;
+    color: #4e3f36;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.2s ease;
   }
 
-  .social-ico i {
-    color: #4e3f36;      /* reset icon color if needed */
-    transition: transform 0.2s ease, color 0.2s ease;
+  .social-ico a:hover {
+    background: #6b8f71;
+    color: #fff;
   }
 
-  .social-ico i:hover {
-    color: #6b8f71;
-    transform: translateY(-2px);
+  /* TAP EFFECT (MOBILE FEEL) */
+  .contact-item:active,
+  .social-ico a:active {
+    transform: scale(0.95);
   }
 
-
-  
 }
 
 .map-section {

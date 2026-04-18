@@ -30,22 +30,21 @@
 <div class="top-bar">
   <div class="contact">
 
-  {{#if site.contact.phones}}
-    {{#each site.contact.phones}}
-      <a href="tel:{{this.number}}" class="contact-item">
-        <i class="fa-solid fa-phone"></i>
-        <span>{{this.label}}: {{this.number}}</span>
-      </a>
-    {{/each}}
-  {{/if}}
-
-  {{#if site.contact.email}}
-    <a href="mailto:{{site.contact.email}}" class="contact-item">
-      <i class="fa-solid fa-envelope"></i>
-      <span>{{site.contact.email}}</span>
+ {{#if site.contact.phones}}
+  {{#each site.contact.phones}}
+    <a href="tel:{{this.number}}" class="contact-item main-contact">
+      <i class="fa-solid fa-phone"></i>
+      <span>{{this.number}}</span>
     </a>
-  {{/if}}
+  {{/each}}
+{{/if}}
 
+{{#if site.contact.email}}
+  <a href="mailto:{{site.contact.email}}" class="contact-item main-contact">
+    <i class="fa-solid fa-envelope"></i>
+    <span>{{site.contact.email}}</span>
+  </a>
+{{/if}}
   {{#if site.whatsapp.number}}
     <a 
       href="https://wa.me/{{site.whatsapp.number}}" 
