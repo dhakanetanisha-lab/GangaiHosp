@@ -1,3 +1,9 @@
+
+/* Space between slider and green header section */
+.slider {
+  margin-bottom: 20px;
+}
+
 /* ===================== */
 /* ESSENCE */
 /* ===================== */
@@ -11,7 +17,7 @@
   color: #422b23;
   font-size: 36px;     /* slightly smaller */
   font-weight: 400;
-  margin-bottom: 10px; /* reduced margin */
+  margin-bottom: 0px; /* reduced margin */
 }
 
 .essence p {

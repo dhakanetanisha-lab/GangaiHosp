@@ -2,15 +2,17 @@
 /* SLIDER */
 /* ============================= */
 
-/* Space between slider and green header section */
-.slider {
-  margin-bottom: 50px;
-}
-
 
 /* ============================= */
 /* PAGE HEADER */
 /* ============================= */
+
+
+/* Space between slider and green header section */
+.slider {
+  margin-bottom: 30px;
+}
+
 
 .page-header {
   background: linear-gradient(135deg, #4f6f52, #6b8f71);
