@@ -13,7 +13,7 @@ aceEditor.setOptions({
 /* ===================== */
 /* STATE */
 /* ===================== */
-let currentPage = "homepage";
+let currentPage = "layout";
 
 const tabs = document.querySelectorAll(".tab");
 const reviewsBox = document.getElementById("reviews");
@@ -121,11 +121,12 @@ function loadReviews() {
     .then(pending => {
       reviewsBox.innerHTML = '';
 
+console.log("Fetching pending reviews...");
       if (!pending || pending.length === 0) {
         reviewsBox.innerText = 'No pending reviews';
         return;
       }
-
+console.log("Fetching pending reviews2...");
       pending.forEach((r, i) => {
         const div = document.createElement('div');
         div.className = 'review-card';
@@ -205,7 +206,7 @@ function resizeEditor() {
 window.addEventListener("resize", resizeEditor);
 
 
-document.getElementById("createReadMore")
+/*document.getElementById("createReadMore")
 .onclick = async ()=>{
 
   fetch(`/content/readmore.yml`)
@@ -213,7 +214,7 @@ document.getElementById("createReadMore")
     .then(t => aceEditor.setValue(t, -1));
 }
 
-/*document.getElementById("saveReadMore")
+*document.getElementById("saveReadMore")
 .onclick = async ()=>{
 
  const filename = prompt("Enter HTML file name");

@@ -10,6 +10,7 @@ const exphbs = require('express-handlebars');
 const app = express();
 app.use(express.json());
 
+
 /* =========================
    STATIC FILES
 ========================= */

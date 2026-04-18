@@ -1,0 +1,10 @@
+cd C:\Users\91989\OneDrive\Desktop\Tanu Work\GangaiHosp
+git init
+git add .
+git commit -m "first commit"
+git config --global user.name "Tanisha Dhakane"
+git config --global user.email "dhakanetanisha@gmail.com"
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dhakanetanisha-lab/GangaiHosp
+git push -u origin main
