@@ -1,0 +1,96 @@
+/* Section Styling */
+.videos {
+  padding: 70px 5%;
+  background: #f6f8f5;
+}
+
+.videos h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #2f5d3a; /* match your green theme */
+}
+
+/* Grid Layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+/* Card Design */
+.video-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  display: block;
+}
+
+.video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail */
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.video-card:hover .thumb img {
+  transform: scale(1.08);
+}
+
+/* Play Button */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  background: rgba(47, 93, 58, 0.9);
+  color: #fff;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.video-card:hover .play-btn {
+  background: #2f5d3a;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Title */
+.video-card h3 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.video-card:hover h3 {
+  color: #2f5d3a;
+}
+
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+}

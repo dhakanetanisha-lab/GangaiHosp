@@ -1,0 +1,82 @@
+
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+    {{#each slider.items}}
+      <div class="slide {{#if @first}}active{{/if}}">
+        <img src="{{this.image}}" alt="{{this.heading}}">
+        <div class="overlay">
+          <h2>{{this.heading}}</h2>
+          <p>{{this.subtext}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  
+  <div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</section>
+
+
+{{#each data.products}}
+<section class="product-hero">
+  <div class="product-image">
+    <img src="{{this.image}}" alt="{{this.title}}">
+  </div>
+
+  <div class="product-details">
+    <h2>{{this.title}}</h2>
+
+    <p class="description">
+      {{this.description}}
+    </p>
+
+    <ul class="features">
+      {{#each this.features}}
+        <li>— {{this}}</li>
+      {{/each}}
+    </ul>
+	
+	<p class="Price">
+      {{this.price}}
+    </p>
+
+
+   <button
+  class="btn-primary order-btn"
+  data-product="{{this.title}}"
+>
+  {{this.button_text}}
+</button>
+
+  </div>
+</section>
+{{/each}}
+
+	<div id="orderModal" class="modal">
+	  <div class="modal-content">
+		<span class="close" onclick="closeOrderModal()">&times;</span>
+
+		<h2>Place Order</h2>
+		<p id="selectedProduct"></p>
+
+		<input id="custName" placeholder="Your Name">
+		<input id="custPhone" placeholder="Phone Number">
+		<textarea id="custAddress" placeholder="Delivery Address"></textarea>
+
+		<button onclick="placeOrder()">Send via WhatsApp</button>
+	  </div>
+	</div>
+
+<script>
+  window.autoSlideTime = {{slider.auto_slide_ms}};
+</script>
+
+<script src="css/product.js"></script>
+
+
+

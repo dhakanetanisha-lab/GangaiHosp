@@ -1,0 +1,86 @@
+<section class="gallery-section">
+  <div class="gallery-grid">
+    {{#each groups}}
+      <figure class="gallery-card">
+        
+        <!-- GROUP CAPTION -->
+        {{#if this.caption}}
+          <figcaption class="group-caption">
+            {{this.caption}}
+          </figcaption>
+        {{/if}}
+
+        <!-- IMAGE LIST -->
+        <div class="group-images">
+          {{#each this.images}}
+            <img 
+              src="{{this}}" 
+             alt="{{../caption}}"
+              
+            >
+          {{/each}}
+        </div>
+
+      </figure>
+    {{/each}}
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+
+  <!-- PREVIOUS -->
+  <button class="lightbox-prev" onclick="prevImage()">❮</button>
+
+  <!-- IMAGE -->
+  <img id="lightbox-img">
+
+  <!-- NEXT -->
+  <button class="lightbox-next" onclick="nextImage()">❯</button>
+
+  <p id="lightbox-caption"></p>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const galleryImages = document.querySelectorAll('.group-images img');
+
+  let currentIndex = 0;
+
+  // CLICK IMAGE → OPEN
+  galleryImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      showImage();
+      document.getElementById('lightbox').style.display = 'flex';
+    });
+  });
+
+  function showImage() {
+    const img = galleryImages[currentIndex];
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox-caption').innerText = img.alt || '';
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    showImage();
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    showImage();
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+
+  // make buttons work
+  window.nextImage = nextImage;
+  window.prevImage = prevImage;
+  window.closeLightbox = closeLightbox;
+
+});
+</script>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Console</title>
+
+<!-- Ace Editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/ace.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/mode-yaml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.3/theme-tomorrow_night.min.js"></script>
+
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+  <h1>Admin Console</h1>
+
+  <!-- CONTENT EDITOR -->
+  <div class="card">
+    <div class="editor-header">
+      <h2>Edit Page Content</h2>
+
+      <!-- NAV TABS -->
+      <div class="page-tabs">
+	    <button class="tab active" data-page="layout">Layout</button>
+        <button class="tab" data-page="homepage">Homepage</button>
+        <button class="tab" data-page="aboutus">AboutUs</button>
+        <button class="tab" data-page="products">Products</button>
+        <button class="tab" data-page="gallery">Gallery</button>
+        <button class="tab" data-page="services">Therapies</button>
+        <button class="tab" data-page="videos">Videos</button>
+		<button class="tab" data-page="panchakarma">Panchakarma</button>
+		<button class="tab" data-page="readmore">Read More</button>
+      </div>
+    </div>
+
+    <div id="editor"></div>
+	
+	<div class="editor-settings">
+  <label>
+    Font
+    <select id="fontFamily">
+      <option value="JetBrains Mono">JetBrains Mono</option>
+      <option value="Fira Code">Fira Code</option>
+      <option value="Courier New">Courier New</option>
+      <option value="monospace">Monospace</option>
+    </select>
+  </label>
+
+  <label>
+    Font Size
+    <select id="fontSize">
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option selected>15</option>
+      <option>16</option>
+      <option>18</option>
+    </select>
+  </label>
+
+  <label>
+    Theme
+    <select id="theme">
+      <option value="tomorrow_night">Dark</option>
+      <option value="github">Light</option>
+      <option value="monokai">Monokai</option>
+    </select>
+  </label>
+</div>
+
+
+    <br>
+    <button class="primary" onclick="save()">Save & Build</button>
+  </div>
+
+  <!-- REVIEWS (Homepage only) -->
+  <div class="card" id="reviewsCard">
+    <h2>Pending Reviews</h2>
+    <div id="reviews">Loading…</div>
+  </div>
+
+  <!-- IMAGE UPLOAD (Homepage only) -->
+  <div class="card" id="uploadCard">
+    <h2>Upload Image</h2>
+    <div class="upload-row">
+      <input type="file" id="image">
+      <button class="primary" onclick="uploadImage()">Upload</button>
+    </div>
+    <p id="result"></p>
+  </div>
+
+  <!-- GALLERY UPLOAD (Gallery only) -->
+  <div class="card" id="galleryCard">
+    <h2>Gallery Upload</h2>
+    <input type="file" id="galleryImage">
+    <button class="primary" onclick="uploadGallery()">Upload to Gallery</button>
+    <p id="galleryResult"></p>
+  </div>
+  <!--<div>
+	<button id="createReadMore">
+	Create Read More Page
+	</button>
+		<button id="saveReadMore">
+	Save
+	</button>
+  </div> --!>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

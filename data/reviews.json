@@ -1,0 +1,37 @@
+{
+  "pending": [
+    {
+      "name": "Testing",
+      "message": "Testing",
+      "date": "2026-02-07T05:25:59.027Z"
+    },
+    {
+      "name": "Ram",
+      "message": "Review By Ram",
+      "date": "2026-03-23T16:27:40.091Z"
+    }
+  ],
+  "approved": [
+    {
+      "name": "Saee",
+      "message": "The meeting with doctor was very amazing, without me telling him, the doctor identified my problems and even asked me if I am hiding anything and then I confessed about my alcohol and smoking things and he guided me in proper direction for positive health results. It’s very rare to meet doctors like him in the Nagpur. And there was one skin disease which he told me has no solution for now in modern science and i liked that, rather than giving unnecessary medicines he told me truth upfront",
+      "date": "2026-02-03T05:23:32.874Z"
+    },
+    {
+      "name": "Angad",
+      "message": "I visited Gangai Hospital, Dr guided me and i underwent various treatments like virechan shirodhara swedan abhyanga basti. Since two year I was taking allopathy medicines but because of steroids I developed various side effects like obesity hair thinning and insomnia but now after all these kriyas I am feeling very relaxed and got rid of these problems.gradulally i am recovering from allergy and I am very thankful to staff which is very coperative and friendly. panchakama really heals soul. Thank you",
+      "date": "2026-02-03T05:27:27.431Z"
+    },
+    {
+      "name": "Santosh Kamble",
+      "message": "I was suffering from Chikungunya and had immense joint pain. Under the guidance of Dr it was cured completely. I no longer suffer from joint ache and fatigue .I’m so thankful and highly recommend those looking for cure!!",
+      "date": "2026-02-03T05:27:27.431Z"
+    }
+	,
+    {
+      "name": "Sagar mangle",
+      "message": "The doctor I saw was friendly, and helpful. He listened to me, and I felt comfortable explaining what my problem is.Great supportive information given. The Receptionist is always helpful and understand.",
+      "date": "2026-02-03T05:27:27.431Z"
+    }
+  ]
+}

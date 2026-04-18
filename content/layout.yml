@@ -1,0 +1,23 @@
+site:
+  contact:
+    phones:
+      - label: "Main"
+        number: "+919309448494"
+      - label: "Landline"
+        number: "+911169269751"
+    email: "gangaihospital315@gmail.com"
+
+  whatsapp:
+    number: "919309448494"   # no +, no spaces
+
+  social:
+    facebook: "https://facebook.com"
+    instagram: "https://www.instagram.com/gangaihospital?igsh=cXUzeW1zb2pkYXI="
+    twitter: "https://twitter.com/yourpage"
+
+
+Mapsite:
+  location:
+    googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.9376349348613!2d76.2617214!3d20.344194899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda1181d43eba51%3A0xc10a1335928d16f7!2sGangai%20Hospital%20And%20Ayurvedic%20Hospital%20%7C%20Dr.%20Pandhari%20Ingle%20-%20Best%20Ayurveda%20Hospital%20In%20Chikhli%20%7C%20Best%20Spine%20Hospital!5e0!3m2!1sen!2sin!4v1770024123102!5m2!1sen!2sin"
+
+

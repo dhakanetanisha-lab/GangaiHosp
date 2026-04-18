@@ -1,0 +1,123 @@
+
+
+<!-- ESSENCE -->
+<section class="essence">
+  <h1>{{essence.heading}}</h1>
+  <p>{{essence.subtext}}</p>
+</section>
+
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+    {{#each slider.items}}
+      <div class="slide {{#if @first}}active{{/if}}">
+        <img src="{{this.image}}" alt="{{this.heading}}">
+        <div class="overlay">
+          <h2>{{this.heading}}</h2>
+          <p>{{this.subtext}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+</section>
+
+
+<!--- ABOUT 
+<section class="about">
+  <img src="{{about.image}}">
+  <div>
+    <h2>{{about.title}}</h2>
+    <p>{{about.description}}</p>
+    <a href="{{about.button.link}}" class="btn">{{about.button.text}}</a> 
+  </div>
+</section>---->
+
+<section class="homedetails">
+  {{#each homedetails.items}}
+    <div class="homedetails-item">
+      <img src="{{this.image}}" alt="{{this.title}}">
+
+      <div class="homedetails-text">
+        <h2>{{this.title}}</h2>
+	  <div class="home-content">
+          {{{this.content_html}}}
+      </div>
+      {{#if this.button}}
+          <a href="{{this.button.link}}" class="about-btn">
+            {{this.button.text}}
+          </a>
+        {{/if}}
+      </div>
+    </div>
+  {{/each}}
+</section>
+
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <h2 class="testimonials-title">{{testimonials.title}}</h2>
+
+  <div class="testimonial-wrapper">
+    <button class="testimonial-nav prev" onclick="moveTestimonial(-1)">❮</button>
+
+    <div class="testimonial-viewport">
+      <div class="testimonial-track" id="testimonialTrack">
+        {{#each testimonials.items}}
+          <div class="testimonial-card">
+            <h3 class="name">{{this.name}}</h3>
+            <div class="divider"></div>
+            <p class="testimonial-text">{{this.message}}</p>
+            <span class="quote-mark">”</span>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <button class="testimonial-nav next" onclick="moveTestimonial(1)">❯</button>
+  </div>
+</section>
+
+
+
+
+
+<!-- REVIEW FORM --><section class="review-bar">
+  <div class="review-bar-text">
+    <h3>Share Your Wellness Story</h3>
+    <p>Your experience helps others begin their healing journey with confidence.</p>
+  </div>
+
+  <form id="reviewForm" class="review-bar-form" onsubmit="submitReview(); return false;">
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+      required
+    />
+
+    <input
+      type="text"
+      id="message"
+      placeholder="Your Review"
+      required
+    />
+
+    <button class="btn" type="submit">Submit</button>
+	
+  </form>
+  <p id="reviewStatus"></p>
+</section>
+
+<script>
+  window.autoSlideTime = {{slider.auto_slide_ms}};
+</script>
+
+<script src="css/home.js"></script>

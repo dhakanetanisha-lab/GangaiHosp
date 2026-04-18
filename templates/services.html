@@ -1,0 +1,75 @@
+
+<!-- TOP CAROUSEL -->
+
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+    {{#each slider.items}}
+      <div class="slide {{#if @first}}active{{/if}}">
+        <img src="{{this.image}}" alt="{{this.heading}}">
+        <div class="overlay">
+          <h2>{{this.heading}}</h2>
+          <p>{{this.subtext}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</section>
+
+
+{{#each data.servicess}}
+<section class="services-hero">
+  <div class="services-image">
+    <img src="{{this.image}}" alt="{{this.title}}">
+  </div>
+
+  <div class="services-details">
+    <h2>{{this.title}}</h2>
+
+    <p class="description">
+      {{this.description}}
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="{{this.title}}"
+>
+  {{this.button_text}}
+</button>
+
+  </div>
+</section>
+{{/each}}
+
+	<div id="orderModal" class="modal">
+	  <div class="modal-content">
+		<span class="close" onclick="closeOrderModal()">&times;</span>
+
+		<h2>Enquire</h2>
+		<p id="selectedservices"></p>
+
+		<input id="custName" placeholder="Your Name">
+		<input id="custPhone" placeholder="Phone Number">
+		<textarea id="custAddress" placeholder="Delivery Address"></textarea>
+
+		<button onclick="placeOrder()">Send via WhatsApp</button>
+	  </div>
+	</div>
+
+
+<script>
+  window.autoSlideTime = {{slider.auto_slide_ms}};
+</script>
+
+<script src="css/services.js"></script>
+
+
+

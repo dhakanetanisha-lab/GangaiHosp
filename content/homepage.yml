@@ -1,0 +1,107 @@
+
+essence:
+
+  heading: |
+
+    Experience the true essence of wellness with  Ayurveda.
+
+  subtext: "Embrace Holistic Health and Harmony with Ayurveda" 
+
+
+slider:
+  auto_slide_ms: 100
+  items:
+    - image: "/icons/page1.jpg"
+      heading: "Authentic Ayurveda"
+      subtext: "Healing rooted in ancient wisdom"
+
+    - image: "/icons/page2.jpg"
+      heading: "Natural Therapies"
+      subtext: "Pure, personalized treatments"
+
+    - image: "/icons/page3.jpg"
+      heading: "Holistic Wellness"
+      subtext: "Balance your body, mind & soul"
+
+
+homedetails:
+    
+  items:
+    - image: "icons/ayurveda.jpg"
+
+      title: "Ever wondered what Ayurveda really is? Unlock its holistic magic!"
+
+      content_html: 
+
+        <h3>Ayurveda for Everyday Life</h3>
+        
+        <p>
+        Testing Ayurveda is best described as the art of living in harmony with the laws of nature. An ancient Indian system of natural and holistic medicine, it promotes living a balanced life by bringing about healthy and natural lifestyle changes. The age old wisdom contained in Ayurveda is as relevant today as it was back in the time. Ayurveda and its principles can easily be adapted in today’s fast paced life to maintain and lead a healthy, stress free and balanced life.
+        Ayurveda has three main focuses- healing, prevention & healthcare. Health care includes maintenance of good health as well as rejuvenation and methods to achieve longevity. Ayurvedic Home Remedies can prove effective in treating various ailments. But the main focus is on prevention as it is easier to maintain health than to restore it once it has become a wreck.
+        </p>
+        
+        <p>
+        Ayurveda places great amount of importance on one’s pathya, eating habits and daily routine. It also provides guidance on how one can adjust lifestyle according to the surroundings and inclusion of ayurvedic products and medicinal plants to lead a healthy lifestyle. Including Ayurveda in your everyday life does not require you to undergo a major lifestyle change. Small and minor things like opting for natural or organic ingredients instead of chemically treated products and food items can do the trick.
+        </p>
+        
+        <p>
+        Moving on from a sedentary lifestyle to a more active one that would include routine exercises like walking can go a long way in keeping you healthy and fit. Drinking fresh juice instead of canned or preservative laden juices and including seasonal & fresh vegetables in your meal will block creation of ama or toxins in the body thus keeping you fresh and active whole day long. Apart from this, Ayurveda also recommends drinking plenty of water through the day as it will help flush out harmful toxins from the body and a glass of warm, before bedtime, to prevent indigestion and get a relaxing and good night’s sleep. If you suffer from indigestion, try these easy natural remedies for indigestion for instant relief.
+        </p>
+
+        <p style="color:#6b8e23; font-weight:600;">
+        Benefits of Ayurveda Based Lifestyle
+        </p>
+        <ul>
+          <li>Increases immunity</li>
+          <li>Improves bodily functions</li>
+          <li>Removes disease from the root</li>
+          <li>Relaxes, rejuvenates & revitalizes</li>
+          <li>Promotes longevity</li>
+        </ul>
+        
+      button:
+
+        text: "Curious? Read More"
+
+        link: "/testing.html"
+    - image: "icons/HistoryOfAyurveda.jpg"
+
+      title: "History of Ayurveda"
+
+      content_html: 
+
+        <h3>History of Ayurveda</h3>
+        
+        <p>
+        AThe ancient rishis or seers of truth, discovered truth by means of religious practices & disciplines. Through intensive meditation, they manifested truth in their daily lives. Ayurvedic system of health is conversance of practical, philosophical & religious experiences of the great sages. The historical evidence of Ayurveda can be found in ancient books of wisdom known as the Vedas. Atharva Veda, that is known to have been written over 10,000 years ago, describes Ayurveda as a system that helps maintain health in a person by using the inherent principles of nature to bring the individual back into equilibrium with their true self.
+        </p>
+        
+      button:
+
+        text: "Curious? Read More"
+
+        link: "/ayurveda.html"
+    - image: "icons/AyurvedaBodyTypes.jpg"
+
+      title: "Ayurvedic Body Types"
+
+      content_html: 
+
+        <h3>Ayurvedic Body Types</h3>
+        
+        <p>
+        Ayurveda is based on the principles of three doshas or the three basic energy types which are further classified as vata, pitta & kapha. According to Ayurveda, these doshas or energies can be found in everyone and everything thus making them the essential building blocks of the material world. All the three doshas combine to create different climates, different foods, different species, and even different individuals within the same species and perform different physiological functions in every individual body. In fact, the particular ratio of vata, pitta, and kapha within each of us has a significant influence on our individual physical, mental, and emotional character traits.
+        </p>
+        
+      button:
+
+        text: "Curious? Read More"
+
+        link: "/AyurvedaBodyTypes.html"    
+testimonials:
+  title: "Testimonials"
+  auto_slide_ms: 4000
+  items: []
+
+
+

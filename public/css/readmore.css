@@ -1,0 +1,133 @@
+/* ===================== */
+/* HOMDETAILS SECTION */
+/* ===================== */
+.readmore {
+  display: flex;
+  flex-direction: column;  /* stack multiple items vertically */
+  gap: 60px;
+  padding: 90px 12%;
+}
+
+.readmore-item {
+  display: flex;
+  flex-direction: row;      /* side-by-side on desktop */
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.readmore img {
+  width: 380px;
+  border-radius: 18px;
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.readmore img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(0,0,0,0.16);
+}
+
+.readmore-text {
+  flex: 1;
+  text-align: left;
+}
+
+.readmore h2 {
+  font-family: 'Playfair Display', serif;
+  color: #422b23;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.readmore p, .readmore ul {
+  color: #5c4a44;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* Button inside readmore */
+.readmore button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #422b23;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.readmore button:hover {
+  background: #6b8e23;
+}
+
+  
+/* ===================== */
+/* RESPONSIVE: Mobile / Tablet */
+/* ===================== */
+@media (max-width: 992px) {
+ .readmore-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .readmore img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .readmore-text {
+    width: 100%;
+  }
+
+  .readmore h2 {
+    font-size: 28px;
+  }
+
+  .readmore p, .readmore ul {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .readmore-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .readmore img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .readmore-text {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .readmore-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .readmore img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .readmore-text {
+    width: 100% !important;
+  }
+}
+

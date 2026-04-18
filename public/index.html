@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gangai Hospital</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="/css/product.css">
+
+<link rel="stylesheet" href="/css/aboutus.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/services.css">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/testimonials.css">
+<link rel="stylesheet" href="/css/review.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<link rel="stylesheet" href="/css/videos.css">
+<link rel="stylesheet" href="/css/panchakarma.css">
+<link rel="stylesheet" href="/css/readmore.css">
+
+</head>
+<body>
+
+<header class="top-header">
+
+<div class="top-bar">
+  <div class="contact">
+
+      <a href="tel:+919309448494" class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Main: +919309448494</span>
+      </a>
+      <a href="tel:+911169269751" class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Landline: +911169269751</span>
+      </a>
+
+    <a href="mailto:gangaihospital315@gmail.com" class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>gangaihospital315@gmail.com</span>
+    </a>
+
+    <a 
+      href="https://wa.me/919309448494" 
+      target="_blank"
+      class="contact-item whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat on WhatsApp</span>
+    </a>
+
+</div>
+  
+
+  <div class="social-ico">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+
+      <a href="https://www.instagram.com/gangaihospital?igsh&#x3D;cXUzeW1zb2pkYXI&#x3D;" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+      <a href="https://twitter.com/yourpage" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+</div>
+
+
+  <div class="header-main">
+
+  <!-- ✅ LOGO -->
+  <div class="logo">
+    <a href="/index.html">
+      <img src="/icons/logo.jpg" alt="Hospital Logo">
+    </a>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" id="hamburger">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" id="siteNav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/aboutus.html">About</a></li>
+      <li><a href="/panchakarma.html">Panchakarma</a></li>
+      <li><a href="/services.html">Therapies</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/videos.html">Videos</a></li>
+    </ul>
+  </nav>
+
+  <!-- BUTTON -->
+  <div class="top-actions">
+    <button class="btn" onclick="openAppointmentModal()">
+      Book Appointment
+    </button>
+  </div>
+
+</div>
+    <!--<a
+	  href="https://wa.me/918793651429?text=%F0%9F%8C%BF%20*Appointment%20Request*%0A%0AHello%2C%20I%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20let%20me%20know%20available%20slots.%0A%0AThank%20you."
+	  class="book-btn"
+	  target="_blank"
+	>
+	  Book Appointment
+	</a>-->
+
+  </div>
+
+</header>
+
+<div id="appointmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAppointmentModal()">&times;</span>
+
+    <h3>Book Appointment</h3>
+
+    <input id="aptName" placeholder="Your Name">
+    <input id="aptPhone" placeholder="Phone Number">
+    <textarea id="aptIssue" placeholder="Health concern (optional)"></textarea>
+
+    <button class="send-btn" onclick="sendAppointmentWhatsApp()">
+      Send via WhatsApp
+    </button>
+  </div>
+</div>
+
+
+
+
+
+<!-- ESSENCE -->
+<section class="essence">
+  <h1>
+Experience the true essence of wellness with  Ayurveda.
+</h1>
+  <p>Embrace Holistic Health and Harmony with Ayurveda</p>
+</section>
+
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+      <div class="slide active">
+        <img src="/icons/page1.jpg" alt="Authentic Ayurveda">
+        <div class="overlay">
+          <h2>Authentic Ayurveda</h2>
+          <p>Healing rooted in ancient wisdom</p>
+        </div>
+      </div>
+      <div class="slide ">
+        <img src="/icons/page2.jpg" alt="Natural Therapies">
+        <div class="overlay">
+          <h2>Natural Therapies</h2>
+          <p>Pure, personalized treatments</p>
+        </div>
+      </div>
+      <div class="slide ">
+        <img src="/icons/page3.jpg" alt="Holistic Wellness">
+        <div class="overlay">
+          <h2>Holistic Wellness</h2>
+          <p>Balance your body, mind &amp; soul</p>
+        </div>
+      </div>
+  </div>
+
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+</section>
+
+
+<!--- ABOUT 
+<section class="about">
+  <img src="">
+  <div>
+    <h2></h2>
+    <p></p>
+    <a href="" class="btn"></a> 
+  </div>
+</section>---->
+
+<section class="homedetails">
+    <div class="homedetails-item">
+      <img src="icons/ayurveda.jpg" alt="Ever wondered what Ayurveda really is? Unlock its holistic magic!">
+
+      <div class="homedetails-text">
+        <h2>Ever wondered what Ayurveda really is? Unlock its holistic magic!</h2>
+	  <div class="home-content">
+          <h3>Ayurveda for Everyday Life</h3>
+<p> Testing Ayurveda is best described as the art of living in harmony with the laws of nature. An ancient Indian system of natural and holistic medicine, it promotes living a balanced life by bringing about healthy and natural lifestyle changes. The age old wisdom contained in Ayurveda is as relevant today as it was back in the time. Ayurveda and its principles can easily be adapted in today’s fast paced life to maintain and lead a healthy, stress free and balanced life. Ayurveda has three main focuses- healing, prevention & healthcare. Health care includes maintenance of good health as well as rejuvenation and methods to achieve longevity. Ayurvedic Home Remedies can prove effective in treating various ailments. But the main focus is on prevention as it is easier to maintain health than to restore it once it has become a wreck. </p>
+<p> Ayurveda places great amount of importance on one’s pathya, eating habits and daily routine. It also provides guidance on how one can adjust lifestyle according to the surroundings and inclusion of ayurvedic products and medicinal plants to lead a healthy lifestyle. Including Ayurveda in your everyday life does not require you to undergo a major lifestyle change. Small and minor things like opting for natural or organic ingredients instead of chemically treated products and food items can do the trick. </p>
+<p> Moving on from a sedentary lifestyle to a more active one that would include routine exercises like walking can go a long way in keeping you healthy and fit. Drinking fresh juice instead of canned or preservative laden juices and including seasonal & fresh vegetables in your meal will block creation of ama or toxins in the body thus keeping you fresh and active whole day long. Apart from this, Ayurveda also recommends drinking plenty of water through the day as it will help flush out harmful toxins from the body and a glass of warm, before bedtime, to prevent indigestion and get a relaxing and good night’s sleep. If you suffer from indigestion, try these easy natural remedies for indigestion for instant relief. </p>
+<p style="color:#6b8e23; font-weight:600;"> Benefits of Ayurveda Based Lifestyle </p> <ul> <li>Increases immunity</li> <li>Improves bodily functions</li> <li>Removes disease from the root</li> <li>Relaxes, rejuvenates & revitalizes</li> <li>Promotes longevity</li> </ul>
+      </div>
+          <a href="/testing.html" class="about-btn">
+            Curious? Read More
+          </a>
+      </div>
+    </div>
+    <div class="homedetails-item">
+      <img src="icons/HistoryOfAyurveda.jpg" alt="History of Ayurveda">
+
+      <div class="homedetails-text">
+        <h2>History of Ayurveda</h2>
+	  <div class="home-content">
+          <h3>History of Ayurveda</h3>
+<p> AThe ancient rishis or seers of truth, discovered truth by means of religious practices & disciplines. Through intensive meditation, they manifested truth in their daily lives. Ayurvedic system of health is conversance of practical, philosophical & religious experiences of the great sages. The historical evidence of Ayurveda can be found in ancient books of wisdom known as the Vedas. Atharva Veda, that is known to have been written over 10,000 years ago, describes Ayurveda as a system that helps maintain health in a person by using the inherent principles of nature to bring the individual back into equilibrium with their true self. </p>
+      </div>
+          <a href="/ayurveda.html" class="about-btn">
+            Curious? Read More
+          </a>
+      </div>
+    </div>
+    <div class="homedetails-item">
+      <img src="icons/AyurvedaBodyTypes.jpg" alt="Ayurvedic Body Types">
+
+      <div class="homedetails-text">
+        <h2>Ayurvedic Body Types</h2>
+	  <div class="home-content">
+          <h3>Ayurvedic Body Types</h3>
+<p> Ayurveda is based on the principles of three doshas or the three basic energy types which are further classified as vata, pitta & kapha. According to Ayurveda, these doshas or energies can be found in everyone and everything thus making them the essential building blocks of the material world. All the three doshas combine to create different climates, different foods, different species, and even different individuals within the same species and perform different physiological functions in every individual body. In fact, the particular ratio of vata, pitta, and kapha within each of us has a significant influence on our individual physical, mental, and emotional character traits. </p>
+      </div>
+          <a href="/AyurvedaBodyTypes.html" class="about-btn">
+            Curious? Read More
+          </a>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <h2 class="testimonials-title">Testimonials</h2>
+
+  <div class="testimonial-wrapper">
+    <button class="testimonial-nav prev" onclick="moveTestimonial(-1)">❮</button>
+
+    <div class="testimonial-viewport">
+      <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <h3 class="name">Saee</h3>
+            <div class="divider"></div>
+            <p class="testimonial-text">The meeting with doctor was very amazing, without me telling him, the doctor identified my problems and even asked me if I am hiding anything and then I confessed about my alcohol and smoking things and he guided me in proper direction for positive health results. It’s very rare to meet doctors like him in the Nagpur. And there was one skin disease which he told me has no solution for now in modern science and i liked that, rather than giving unnecessary medicines he told me truth upfront</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="name">Angad</h3>
+            <div class="divider"></div>
+            <p class="testimonial-text">I visited Gangai Hospital, Dr guided me and i underwent various treatments like virechan shirodhara swedan abhyanga basti. Since two year I was taking allopathy medicines but because of steroids I developed various side effects like obesity hair thinning and insomnia but now after all these kriyas I am feeling very relaxed and got rid of these problems.gradulally i am recovering from allergy and I am very thankful to staff which is very coperative and friendly. panchakama really heals soul. Thank you</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="name">Santosh Kamble</h3>
+            <div class="divider"></div>
+            <p class="testimonial-text">I was suffering from Chikungunya and had immense joint pain. Under the guidance of Dr it was cured completely. I no longer suffer from joint ache and fatigue .I’m so thankful and highly recommend those looking for cure!!</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-card">
+            <h3 class="name">Sagar mangle</h3>
+            <div class="divider"></div>
+            <p class="testimonial-text">The doctor I saw was friendly, and helpful. He listened to me, and I felt comfortable explaining what my problem is.Great supportive information given. The Receptionist is always helpful and understand.</p>
+            <span class="quote-mark">”</span>
+          </div>
+      </div>
+    </div>
+
+    <button class="testimonial-nav next" onclick="moveTestimonial(1)">❯</button>
+  </div>
+</section>
+
+
+
+
+
+<!-- REVIEW FORM --><section class="review-bar">
+  <div class="review-bar-text">
+    <h3>Share Your Wellness Story</h3>
+    <p>Your experience helps others begin their healing journey with confidence.</p>
+  </div>
+
+  <form id="reviewForm" class="review-bar-form" onsubmit="submitReview(); return false;">
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+      required
+    />
+
+    <input
+      type="text"
+      id="message"
+      placeholder="Your Review"
+      required
+    />
+
+    <button class="btn" type="submit">Submit</button>
+	
+  </form>
+  <p id="reviewStatus"></p>
+</section>
+
+<script>
+  window.autoSlideTime = 100;
+</script>
+
+<script src="css/home.js"></script>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>Quick Links</h3>
+	  
+	<section class="map-section">
+	  <iframe
+		src="https://www.google.com/maps/embed?pb&#x3D;!1m18!1m12!1m3!1d3740.9376349348613!2d76.2617214!3d20.344194899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda1181d43eba51%3A0xc10a1335928d16f7!2sGangai%20Hospital%20And%20Ayurvedic%20Hospital%20%7C%20Dr.%20Pandhari%20Ingle%20-%20Best%20Ayurveda%20Hospital%20In%20Chikhli%20%7C%20Best%20Spine%20Hospital!5e0!3m2!1sen!2sin!4v1770024123102!5m2!1sen!2sin"
+		width="100%"
+		height="350"
+		style="border:0;"
+		allowfullscreen
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+	  </iframe>
+	</section>
+
+
+
+      <ul>
+
+		
+        <li><a href="/index.html">Home</a></li>
+		<li><a href="/aboutus.html">About</a></li>
+              
+	   <li><a href="/panchakarma.html">Panchakarma</a></li>
+        <li><a href="/services.html">Therapies</a></li>     
+		<li><a href="/products.html">Products</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/videos.html">Videos</a></li>
+		
+      </ul>
+    </div>
+  </div>
+
+ 
+
+  <p class="copy">© 2026  Ayurveda</p>
+
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const siteNav = document.getElementById('siteNav');
+
+hamburger.addEventListener('click', () => {
+  siteNav.classList.toggle('show');
+});
+</script>
+
+<script src="css/slider.js"></script>
+<script src="css/appointment.js"></script>
+
+</body>
+</html>

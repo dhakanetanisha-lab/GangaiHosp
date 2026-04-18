@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Gangai Hospital</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="/css/product.css">
+
+<link rel="stylesheet" href="/css/aboutus.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/services.css">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/testimonials.css">
+<link rel="stylesheet" href="/css/review.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<link rel="stylesheet" href="/css/videos.css">
+<link rel="stylesheet" href="/css/panchakarma.css">
+<link rel="stylesheet" href="/css/readmore.css">
+
+</head>
+<body>
+
+<header class="top-header">
+
+<div class="top-bar">
+  <div class="contact">
+
+      <a href="tel:+919309448494" class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Main: +919309448494</span>
+      </a>
+      <a href="tel:+911169269751" class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Landline: +911169269751</span>
+      </a>
+
+    <a href="mailto:gangaihospital315@gmail.com" class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>gangaihospital315@gmail.com</span>
+    </a>
+
+    <a 
+      href="https://wa.me/919309448494" 
+      target="_blank"
+      class="contact-item whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat on WhatsApp</span>
+    </a>
+
+</div>
+  
+
+  <div class="social-ico">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+
+      <a href="https://www.instagram.com/gangaihospital?igsh&#x3D;cXUzeW1zb2pkYXI&#x3D;" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+      <a href="https://twitter.com/yourpage" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+</div>
+
+
+  <div class="header-main">
+
+  <!-- ✅ LOGO -->
+  <div class="logo">
+    <a href="/index.html">
+      <img src="/icons/logo.jpg" alt="Hospital Logo">
+    </a>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" id="hamburger">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" id="siteNav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/aboutus.html">About</a></li>
+      <li><a href="/panchakarma.html">Panchakarma</a></li>
+      <li><a href="/services.html">Therapies</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/videos.html">Videos</a></li>
+    </ul>
+  </nav>
+
+  <!-- BUTTON -->
+  <div class="top-actions">
+    <button class="btn" onclick="openAppointmentModal()">
+      Book Appointment
+    </button>
+  </div>
+
+</div>
+    <!--<a
+	  href="https://wa.me/918793651429?text=%F0%9F%8C%BF%20*Appointment%20Request*%0A%0AHello%2C%20I%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20let%20me%20know%20available%20slots.%0A%0AThank%20you."
+	  class="book-btn"
+	  target="_blank"
+	>
+	  Book Appointment
+	</a>-->
+
+  </div>
+
+</header>
+
+<div id="appointmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAppointmentModal()">&times;</span>
+
+    <h3>Book Appointment</h3>
+
+    <input id="aptName" placeholder="Your Name">
+    <input id="aptPhone" placeholder="Phone Number">
+    <textarea id="aptIssue" placeholder="Health concern (optional)"></textarea>
+
+    <button class="send-btn" onclick="sendAppointmentWhatsApp()">
+      Send via WhatsApp
+    </button>
+  </div>
+</div>
+
+
+
+
+<!-- TOP CAROUSEL -->
+
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+      <div class="slide active">
+        <img src="/icons/page1.jpg" alt="Authentic Ayurveda">
+        <div class="overlay">
+          <h2>Authentic Ayurveda</h2>
+          <p>Healing rooted in ancient wisdom</p>
+        </div>
+      </div>
+      <div class="slide ">
+        <img src="/icons/page2.jpg" alt="Natural Therapies">
+        <div class="overlay">
+          <h2>Natural Therapies</h2>
+          <p>Pure, personalized treatments</p>
+        </div>
+      </div>
+      <div class="slide ">
+        <img src="/icons/page3.jpg" alt="Holistic Wellness">
+        <div class="overlay">
+          <h2>Holistic Wellness</h2>
+          <p>Balance your body, mind &amp; soul</p>
+        </div>
+      </div>
+  </div>
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</section>
+
+
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Vaman.jpg" alt="Vaman">
+  </div>
+
+  <div class="services-details">
+    <h2>Vaman</h2>
+
+    <p class="description">
+      Vaman is a purification therapy that expels vitiated Kapha and Pitta doshas from the body through therapeutic vomiting. Uses&#x3D; Effective for chronic colds, coughs, asthma, shortness of breath, skin diseases, psoriasis, vitiligo, diabetes, thyroid disorders, obesity, hyperacidity, indigestion, tonsillitis, lymphatic swelling, recurrent fever, and various Kapha and Pitta-related diseases
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Vaman"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Virechan.jpg" alt="Virechan">
+  </div>
+
+  <div class="services-details">
+    <h2>Virechan</h2>
+
+    <p class="description">
+      Virechan is a purification therapy that expels vitiated Pitta and Kapha doshas from the body through therapeutic purgation. Uses&#x3D; Beneficial for jaundice, liver diseases, spleen diseases, gallstones, constipation, hyperacidity, hemorrhoids, fistula, piles, various skin diseases (scabies, eczema), diabetes, obesity, worm infestations, urinary disorders, gout, burning sensation in the body, headache, burning in the eyes, chronic fever, herpes, and various Pitta and Kapha-related diseases
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Virechan"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Basti.jpg" alt="Basti">
+  </div>
+
+  <div class="services-details">
+    <h2>Basti</h2>
+
+    <p class="description">
+      Basti is a purification therapy where medicated oils or decoctions are administered through the anal route, primarily balancing Vata dosha. Uses&#x3D; Highly beneficial for chronic constipation, bloating, abdominal pain, joint pain, waist pain, knee pain, sciatica, paralysis, tremors, muscle weakness, infertility, sexual debility, menstrual disorders, PCOS, neurological disorders, Parkinson&#x27;s disease, and various Vata-related diseases.
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Basti"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Nasya.jpg" alt="Nasya">
+  </div>
+
+  <div class="services-details">
+    <h2>Nasya</h2>
+
+    <p class="description">
+      asya involves administering medicated oils or powders through the nostrils, primarily for diseases above the clavicle (neck and head region). Uses &#x3D; Effective for chronic sinusitis, headache, migraine, hair fall, premature graying of hair, ear pain, eye diseases, dental diseases, paralysis of the face, insomnia, stress, memory loss, and various diseases of the head and neck.
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Nasya"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Swedan.jpg" alt="Swedan (Fomentation/Sweating):">
+  </div>
+
+  <div class="services-details">
+    <h2>Swedan (Fomentation/Sweating):</h2>
+
+    <p class="description">
+      Swedan involves various methods of inducing sweating to open up channels and remove toxins. Uses&#x3D; Effective for body aches, stiffness, joint pain, back pain, sciatica, frozen shoulder, muscle cramps, paralysis, swelling, colds, coughs, and various Vata and Kapha-related diseases.
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Swedan (Fomentation/Sweating):"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Raktamokshan.jpg" alt="Raktamokshan">
+  </div>
+
+  <div class="services-details">
+    <h2>Raktamokshan</h2>
+
+    <p class="description">
+      Raktamokshan is a purification therapy involving controlled bloodletting to remove vitiated blood. Uses&#x3D; Beneficial for various skin diseases (scabies, eczema, ringworm), chronic wounds, boils, carbuncles, abscesses, vitiligo, psoriasis, gout, arthritis, allergic reactions, and various blood-related disorders.
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Raktamokshan"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Abhyanga.jpg" alt="Abhyanga (Oil Massage)">
+  </div>
+
+  <div class="services-details">
+    <h2>Abhyanga (Oil Massage)</h2>
+
+    <p class="description">
+      Abhyanga involves applying medicated oils to the body through massage. Uses&#x3D;Promotes healthy skin, strengthens muscles, relieves fatigue, improves sleep, reduces stress, enhances circulation, and nourishes the body. ) Shirodhara (Forehead Oil Drip)
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Abhyanga (Oil Massage)"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+<section class="services-hero">
+  <div class="services-image">
+    <img src="/icons/Shirodhara.jpg" alt="Shirodhara (Forehead Oil Drip)">
+  </div>
+
+  <div class="services-details">
+    <h2>Shirodhara (Forehead Oil Drip)</h2>
+
+    <p class="description">
+      Shirodhara involves a continuous stream of medicated oil poured on the forehead. Uses&#x3D; Highly effective for stress, anxiety, insomnia, hypertension, headaches, neurological disorders, hair fall, premature graying, and various diseases of the head
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="Shirodhara (Forehead Oil Drip)"
+>
+  Enquire Now
+</button>
+
+  </div>
+</section>
+
+	<div id="orderModal" class="modal">
+	  <div class="modal-content">
+		<span class="close" onclick="closeOrderModal()">&times;</span>
+
+		<h2>Enquire</h2>
+		<p id="selectedservices"></p>
+
+		<input id="custName" placeholder="Your Name">
+		<input id="custPhone" placeholder="Phone Number">
+		<textarea id="custAddress" placeholder="Delivery Address"></textarea>
+
+		<button onclick="placeOrder()">Send via WhatsApp</button>
+	  </div>
+	</div>
+
+
+<script>
+  window.autoSlideTime = 1000;
+</script>
+
+<script src="css/services.js"></script>
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>Quick Links</h3>
+	  
+	<section class="map-section">
+	  <iframe
+		src="https://www.google.com/maps/embed?pb&#x3D;!1m18!1m12!1m3!1d3740.9376349348613!2d76.2617214!3d20.344194899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda1181d43eba51%3A0xc10a1335928d16f7!2sGangai%20Hospital%20And%20Ayurvedic%20Hospital%20%7C%20Dr.%20Pandhari%20Ingle%20-%20Best%20Ayurveda%20Hospital%20In%20Chikhli%20%7C%20Best%20Spine%20Hospital!5e0!3m2!1sen!2sin!4v1770024123102!5m2!1sen!2sin"
+		width="100%"
+		height="350"
+		style="border:0;"
+		allowfullscreen
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+	  </iframe>
+	</section>
+
+
+
+      <ul>
+
+		
+        <li><a href="/index.html">Home</a></li>
+		<li><a href="/aboutus.html">About</a></li>
+              
+	   <li><a href="/panchakarma.html">Panchakarma</a></li>
+        <li><a href="/services.html">Therapies</a></li>     
+		<li><a href="/products.html">Products</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/videos.html">Videos</a></li>
+		
+      </ul>
+    </div>
+  </div>
+
+ 
+
+  <p class="copy">© 2026  Ayurveda</p>
+
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const siteNav = document.getElementById('siteNav');
+
+hamburger.addEventListener('click', () => {
+  siteNav.classList.toggle('show');
+});
+</script>
+
+<script src="css/slider.js"></script>
+<script src="css/appointment.js"></script>
+
+</body>
+</html>

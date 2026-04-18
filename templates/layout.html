@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="/css/product.css">
+
+<link rel="stylesheet" href="/css/aboutus.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/services.css">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/testimonials.css">
+<link rel="stylesheet" href="/css/review.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<link rel="stylesheet" href="/css/videos.css">
+<link rel="stylesheet" href="/css/panchakarma.css">
+<link rel="stylesheet" href="/css/readmore.css">
+
+</head>
+<body>
+
+<header class="top-header">
+
+<div class="top-bar">
+  <div class="contact">
+
+  {{#if site.contact.phones}}
+    {{#each site.contact.phones}}
+      <a href="tel:{{this.number}}" class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>{{this.label}}: {{this.number}}</span>
+      </a>
+    {{/each}}
+  {{/if}}
+
+  {{#if site.contact.email}}
+    <a href="mailto:{{site.contact.email}}" class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>{{site.contact.email}}</span>
+    </a>
+  {{/if}}
+
+  {{#if site.whatsapp.number}}
+    <a 
+      href="https://wa.me/{{site.whatsapp.number}}" 
+      target="_blank"
+      class="contact-item whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat on WhatsApp</span>
+    </a>
+  {{/if}}
+
+</div>
+  
+
+  <div class="social-ico">
+    {{#if site.social.facebook}}
+      <a href="{{site.social.facebook}}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+    {{/if}}
+
+    {{#if site.social.instagram}}
+      <a href="{{site.social.instagram}}" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    {{/if}}
+
+    {{#if site.social.twitter}}
+      <a href="{{site.social.twitter}}" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    {{/if}}
+  </div>
+</div>
+
+
+  <div class="header-main">
+
+  <!-- ✅ LOGO -->
+  <div class="logo">
+    <a href="/index.html">
+      <img src="/icons/logo.jpg" alt="Hospital Logo">
+    </a>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" id="hamburger">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" id="siteNav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/aboutus.html">About</a></li>
+      <li><a href="/panchakarma.html">Panchakarma</a></li>
+      <li><a href="/services.html">Therapies</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/videos.html">Videos</a></li>
+    </ul>
+  </nav>
+
+  <!-- BUTTON -->
+  <div class="top-actions">
+    <button class="btn" onclick="openAppointmentModal()">
+      Book Appointment
+    </button>
+  </div>
+
+</div>
+    <!--<a
+	  href="https://wa.me/918793651429?text=%F0%9F%8C%BF%20*Appointment%20Request*%0A%0AHello%2C%20I%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20let%20me%20know%20available%20slots.%0A%0AThank%20you."
+	  class="book-btn"
+	  target="_blank"
+	>
+	  Book Appointment
+	</a>-->
+
+  </div>
+
+</header>
+
+<div id="appointmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAppointmentModal()">&times;</span>
+
+    <h3>Book Appointment</h3>
+
+    <input id="aptName" placeholder="Your Name">
+    <input id="aptPhone" placeholder="Phone Number">
+    <textarea id="aptIssue" placeholder="Health concern (optional)"></textarea>
+
+    <button class="send-btn" onclick="sendAppointmentWhatsApp()">
+      Send via WhatsApp
+    </button>
+  </div>
+</div>
+
+
+
+{{{body}}}
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>Quick Links</h3>
+	  
+	<section class="map-section">
+	  <iframe
+		src="{{Mapsite.location.googleMapEmbed}}"
+		width="100%"
+		height="350"
+		style="border:0;"
+		allowfullscreen
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+	  </iframe>
+	</section>
+
+
+
+      <ul>
+
+		
+        <li><a href="/index.html">Home</a></li>
+		<li><a href="/aboutus.html">About</a></li>
+              
+	   <li><a href="/panchakarma.html">Panchakarma</a></li>
+        <li><a href="/services.html">Therapies</a></li>     
+		<li><a href="/products.html">Products</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/videos.html">Videos</a></li>
+		
+      </ul>
+    </div>
+  </div>
+
+ 
+
+  <p class="copy">© 2026  Ayurveda</p>
+
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const siteNav = document.getElementById('siteNav');
+
+hamburger.addEventListener('click', () => {
+  siteNav.classList.toggle('show');
+});
+</script>
+
+<script src="css/slider.js"></script>
+<script src="css/appointment.js"></script>
+
+</body>
+</html>

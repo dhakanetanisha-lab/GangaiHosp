@@ -1,0 +1,62 @@
+
+slider:
+  auto_slide_ms: 1000
+  items:
+    - image: "/icons/page1.jpg"
+      heading: "Authentic Ayurveda"
+      subtext: "Healing rooted in ancient wisdom"
+
+    - image: "/icons/page2.jpg"
+      heading: "Natural Therapies"
+      subtext: "Pure, personalized treatments"
+
+    - image: "/icons/page3.jpg"
+      heading: "Holistic Wellness"
+      subtext: "Balance your body, mind & soul"
+
+
+readmore:
+    
+  items:
+    - image: "icons/AyurvedaBodyTypes.jpg"
+
+      title: "Ayurvedic Body Types"
+
+      content_html: 
+
+        <h3>Ayurveda for Everyday Life</h3>
+        
+        <p>
+        Ayurveda is based on the principles of three doshas or the three basic energy types which are further classified as vata, pitta & kapha. According to Ayurveda, these doshas or energies can be found in everyone and everything thus making them the essential building blocks of the material world. All the three doshas combine to create different climates, different foods, different species, and even different individuals within the same species and perform different physiological functions in every individual body. In fact, the particular ratio of vata, pitta, and kapha within each of us has a significant influence on our individual physical, mental, and emotional character traits.
+
+        Here’s explaining you the three doshas and the different functions they perform within the body.
+        </p>
+        
+        <h3>Vata Dosha (wind energy)</h3>
+        <p>
+        Vata is predominantly composed of the space and air elements. It is the energy that is linked to creativity & flexibility and controls bodily functions associated with motion, including blood circulation, breathing, blinking, tissue movement, cellular mobility, heartbeat and the communication between mind and the nervous system. When an imbalance of vata dosha occurs in the body, it can produce fear and anxiety.
+        </p>
+        
+        
+        <h3>Pitta Dosha (fire energy):</h3>
+        <p>
+        Pitta is principally made up of the fire and water elements and is an amalgamation of the hot, sharp, light, liquid, oily, and subtle qualities. Pitta is neither mobile nor stable, but spreads. It controls the body’s metabolic systems including digestion, absorption, nutrition, and your body’s temperature. When in balance, it lends contentment & intelligence and its imbalance can cause ulcers and anger.
+        </p>
+        
+        <h3></h3>
+        <h3>Kapha Dosha (water energy):</h3>
+        <p>
+        Kapha is composed primarily of the earth and water elements. It is the energy that lends structure and solidity to all things and provides the cohesiveness needed to maintain a particular form. It controls growth in body and provides water to all parts of the body. As a result, it hydrates all cells and systems, lubricates the joints, moisturizes the skin, maintains immunity and protects the tissues. When in balance, it is expressed as love and forgiveness; and when it goes out of balance it can lead to feelings of insecurity & envy.
+        </p>
+       
+        <p style="color:#6b8e23; font-weight:600;">
+        Benefits of Ayurveda Based Lifestyle
+        </p>
+        <ul>
+          <li>Increases immunity</li>
+          <li>Improves bodily functions</li>
+          <li>Removes disease from the root</li>
+          <li>Relaxes, rejuvenates & revitalizes</li>
+          <li>Promotes longevity</li>
+        </ul>
+        
