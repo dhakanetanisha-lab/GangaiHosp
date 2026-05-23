@@ -16,19 +16,7 @@ slider:
       
 data:
   products:
-    - title: "FACE WASH"
-      description: " Testing  : testoing A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
-      features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
-
-      button_text: "Order Now"
-      image: "/icons/FaceWash.jpg"
-      price: "RS 499.00"
-      
+    
     - title: "Shuddhi Kalpa"
       description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
@@ -68,5 +56,17 @@ data:
       image: "/icons/KumkumadiTailam.jpg"
       price: "RS 499.00"
 
+    - title: "FACE WASH"
+      description: " Testing  : testoing A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
+      button_text: "Order Now"
+      image: "/icons/FaceWash.jpg"
+      price: "RS 499.00"
   footer:
     text: "© 2026 Gangai Hospital"
