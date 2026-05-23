@@ -3,7 +3,10 @@ groups:
     images:
       - /gallery/DoctorCabin1.JPG
       - /gallery/DoctorCabin2.JPG
-
+      - /gallery/Doctor1.JPG
+      - /gallery/Doctor2.JPG
+      - /gallery/Doctor3.JPG   
+      
   - caption: Hospital
     images:
       - /gallery/HospitalFront.JPG
