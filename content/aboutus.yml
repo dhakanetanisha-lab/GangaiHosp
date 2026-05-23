@@ -52,12 +52,12 @@ doctors:
   subtitle: "Seasoned practitioners blending ancient wisdom with modern care"
   items:
     - name: "Dr. Pandhari Ingle"
-      specialization: "Ayurveda & Panchakarma : registration number 12344556" 
+      specialization: "आयुर्वेद वाचस्पती, MD, Ph.D (Sch), AVN, Spine व वातविकार तज्ञ" 
       image: "/icons/doctor1.jpg"
       bio: "Specialized in traditional Ayurveda treatments and holistic wellness programs."
 
       social:
         instagram: "https://www.instagram.com/drpandhariingle?igsh=Z3UzODZqNDk4ZHhj"
-        facebook: "https://facebook.com/drprofile"
+        facebook: "https://www.facebook.com/profile.php?id=100095530922818"
         youtube: "https://www.youtube.com/@dr.pandhariingle"
         gmail: "gangaihospital315@gmail.com"

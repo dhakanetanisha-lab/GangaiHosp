@@ -18,5 +18,13 @@
     "js-yaml": "^4.1.1",
     "multer": "^2.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhakanetanisha-lab/GangaiHosp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhakanetanisha-lab/GangaiHosp/issues"
+  },
+  "homepage": "https://github.com/dhakanetanisha-lab/GangaiHosp#readme"
 }
