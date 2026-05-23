@@ -2,8 +2,12 @@ groups:
   - caption: Dr
     images:
       - /gallery/DoctorCabin1.JPG
-      - /gallery/DoctorCabin2.jpg
+      - /gallery/DoctorCabin2.JPG
 
+  - caption: Hospital
+    images:
+      - /gallery/HospitalFront.JPG
+            
   - caption: Hospital Staff
     images:
       - /gallery/HospitalStaff.JPG
