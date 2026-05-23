@@ -1,31 +1,13 @@
 groups:
+  - caption: Dr
+    images:
+      - /gallery/DoctorCabin1.JPG
+      - /gallery/DoctorCabin2.jpg
+
+  - caption: Hospital Staff
+    images:
+      - /gallery/HospitalStaff.JPG
+      
   - caption: Panchakarma Therapy Session
     images:
-      - /gallery/Gangai Banner All(12)_3.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/Gangai Banner All(12)_4.jpg
-      - /gallery/clinic.jpg
-
-  - caption: Ayurvedic Medicine Preparation
-    images:
-      - /gallery/Gangai Banner All(12)_3.jpg
-      - /gallery/herbal-prep.jpg
-      - /gallery/herbal-prep.jpg
-      - /gallery/herbal-prep.jpg
-
-  - caption: Ayurvedic Medicine Preparation
-    images:
-      - /gallery/Gangai Banner All(12)_3.jpg
-      - /gallery/herbal-prep.jpg
-      - /gallery/herbal-prep.jpg
-      - /gallery/herbal-prep.jpg
+      - /gallery/ResearchCenter.jpg
