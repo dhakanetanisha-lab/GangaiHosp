@@ -26,7 +26,7 @@ data:
         - "Boosts immunity"
 
       button_text: "Order Now"
-      image: "/icons/FaceWash.png"
+      image: "/icons/FaceWash.jpg"
       price: "RS 499.00"
       
     - title: "Shuddhi Kalpa"
