@@ -1,20 +1,21 @@
 groups:
-  - caption: Dr
+  - caption: Doctor
     images:
       - /gallery/DoctorCabin1.JPG
       - /gallery/DoctorCabin2.JPG
       - /gallery/Doctor1.JPG
       - /gallery/Doctor2.JPG
       - /gallery/Doctor3.JPG   
+
+  - caption: Hospital Staff
+    images:
+      - /gallery/HospitalStaff1.JPG
+      - /gallery/HospitalStaff2.JPG
       
   - caption: Hospital
     images:
       - /gallery/HospitalFront.JPG
-            
-  - caption: Hospital Staff
-    images:
-      - /gallery/HospitalStaff.JPG
-      
+                
   - caption: Panchakarma Therapy Session
     images:
       - /gallery/ResearchCenter.jpg
