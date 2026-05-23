@@ -36,7 +36,7 @@ homedetails:
         <h3>Ayurveda for Everyday Life</h3>
         
         <p>
-        Testing Ayurveda is best described as the art of living in harmony with the laws of nature. An ancient Indian system of natural and holistic medicine, it promotes living a balanced life by bringing about healthy and natural lifestyle changes. The age old wisdom contained in Ayurveda is as relevant today as it was back in the time. Ayurveda and its principles can easily be adapted in today’s fast paced life to maintain and lead a healthy, stress free and balanced life.
+        Ayurveda is best described as the art of living in harmony with the laws of nature. An ancient Indian system of natural and holistic medicine, it promotes living a balanced life by bringing about healthy and natural lifestyle changes. The age old wisdom contained in Ayurveda is as relevant today as it was back in the time. Ayurveda and its principles can easily be adapted in today’s fast paced life to maintain and lead a healthy, stress free and balanced life.
         Ayurveda has three main focuses- healing, prevention & healthcare. Health care includes maintenance of good health as well as rejuvenation and methods to achieve longevity. Ayurvedic Home Remedies can prove effective in treating various ailments. But the main focus is on prevention as it is easier to maintain health than to restore it once it has become a wreck.
         </p>
         
@@ -45,7 +45,7 @@ homedetails:
 
         text: "Curious? Read More"
 
-        link: "/testing.html"
+        link: "/ayurveda.html"
     - image: "icons/HistoryOfAyurveda.jpg"
 
       title: "History of Ayurveda"
@@ -55,14 +55,14 @@ homedetails:
         <h3>History of Ayurveda</h3>
         
         <p>
-        AThe ancient rishis or seers of truth, discovered truth by means of religious practices & disciplines. Through intensive meditation, they manifested truth in their daily lives. Ayurvedic system of health is conversance of practical, philosophical & religious experiences of the great sages. The historical evidence of Ayurveda can be found in ancient books of wisdom known as the Vedas. Atharva Veda, that is known to have been written over 10,000 years ago, describes Ayurveda as a system that helps maintain health in a person by using the inherent principles of nature to bring the individual back into equilibrium with their true self.
+        The ancient rishis or seers of truth, discovered truth by means of religious practices & disciplines. Through intensive meditation, they manifested truth in their daily lives. Ayurvedic system of health is conversance of practical, philosophical & religious experiences of the great sages. The historical evidence of Ayurveda can be found in ancient books of wisdom known as the Vedas. Atharva Veda, that is known to have been written over 10,000 years ago, describes Ayurveda as a system that helps maintain health in a person by using the inherent principles of nature to bring the individual back into equilibrium with their true self.
         </p>
         
       button:
 
         text: "Curious? Read More"
 
-        link: "/ayurveda.html"
+        link: "/ayurvedaHistory.html"
     - image: "icons/AyurvedaBodyTypes.jpg"
 
       title: "Ayurvedic Body Types"
