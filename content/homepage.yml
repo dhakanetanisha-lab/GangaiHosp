@@ -1,11 +1,10 @@
 
 essence:
+  heading: "Experience the true essence of wellness with Ayurveda."
 
-  heading: |
+  english_text: "Natural healing solutions inspired by ancient Ayurvedic wisdom."
 
-    Experience the true essence of wellness with  Ayurveda.
-
-  subtext: "हजारो AVN व मणक्याचे (Spinal Disorder) रुग्णांना शस्त्रक्रिया न करता आयुर्वेदिक उपचाराने आराम मिळालेला आहे.तुम्हालाही AVN व मणक्याचे (Spinal Disorder) चा त्रास असल्यास वेळ न लावता योग्य मार्गदर्शन घ्या." 
+  marathi_text: "हजारो AVN व मणक्याचे (Spinal Disorder) रुग्णांना शस्त्रक्रिया न करता आयुर्वेदिक उपचाराने आराम मिळालेला आहे. तुम्हालाही AVN व मणक्याचे (Spinal Disorder) चा त्रास असल्यास वेळ न लावता योग्य मार्गदर्शन घ्या."
 
 
 slider:

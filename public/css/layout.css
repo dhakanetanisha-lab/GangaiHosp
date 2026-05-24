@@ -22,11 +22,6 @@
   padding: 10px 20px;
 }
 
-/* LOGO */
-.logo img {
-  height: 70px;
-  width: auto;
-}
 
 /* NAV CENTER */
 .site-nav {
@@ -817,4 +812,28 @@ body {
 
 .social-ico a:hover {
   color: #2c7a7b;
+}
+
+/* =========================
+   PERFECT CIRCULAR LOGO
+========================= */
+
+.logo img {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .logo img {
+    width: 65px !important;
+    height: 65px !important;
+    min-width: 65px;
+    min-height: 65px;
+    border-radius: 50% !important;
+    object-fit: cover;
+  }
 }
