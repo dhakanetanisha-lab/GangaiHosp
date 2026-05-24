@@ -22,15 +22,6 @@ groups:
       - /gallery/Doctor1.JPG
       - /gallery/Doctor2.JPG
       - /gallery/Doctor3.JPG   
-
-  - caption: Hospital Staff
-    images:
-      - /gallery/HospitalStaff1.JPG
-      - /gallery/HospitalStaff2.jpg
-      
-  - caption: Hospital
-    images:
-      - /gallery/HospitalFront.JPG
                 
   - caption: Panchakarma Therapy Session
     images:
@@ -66,4 +57,11 @@ groups:
       - /gallery/ResearchCenter29.jpg
       - /gallery/ResearchCenter30.jpg
   
+  - caption: Hospital Staff
+    images:
+      - /gallery/HospitalStaff1.JPG
+      - /gallery/HospitalStaff2.jpg
       
+  - caption: Hospital
+    images:
+      - /gallery/HospitalFront.JPG     
