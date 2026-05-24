@@ -26,7 +26,7 @@ groups:
   - caption: Hospital Staff
     images:
       - /gallery/HospitalStaff1.JPG
-      - /gallery/HospitalStaff2.JPG
+      - /gallery/HospitalStaff2.jpg
       
   - caption: Hospital
     images:
@@ -65,5 +65,5 @@ groups:
       - /gallery/ResearchCenter28.jpg
       - /gallery/ResearchCenter29.jpg
       - /gallery/ResearchCenter30.jpg
-      - /gallery/ResearchCenter31.jpg      
+  
       
