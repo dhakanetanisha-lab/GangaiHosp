@@ -1,6 +1,7 @@
 videos:
-  heading: "AVN म्हणजे काय? Spine व AVN वर शस्त्रक्रिया टाळता येऊ शकते का? 
-  subtext: आयुर्वेदिक उपचार कसे काम करतात? या सर्व प्रश्नांची सविस्तर माहिती जाणून घेण्यासाठी खालील व्हिडिओ नक्की पहा "
+  heading: "AVN म्हणजे काय? Spine व AVN वर शस्त्रक्रिया टाळता येऊ शकते का?"
+
+  subtext: "आयुर्वेदिक उपचार कसे काम करतात? या सर्व प्रश्नांची सविस्तर माहिती जाणून घेण्यासाठी खालील व्हिडिओ नक्की पहा."
 
   items:
     - title: "Zee 24 Taas वरची खास मुलाखत. विषय: AVN"
@@ -12,10 +13,10 @@ videos:
     - title: "Zee 24 Taas वरची खास मुलाखत. विषय: मणक्याचे आजार"
       videoId: "00T3P9Xahdc"
 
-    - title: "मणक्याचे (Spinal Disorder)वर विशेष Podcast – मराठी"
+    - title: "मणक्याचे (Spinal Disorder) वर विशेष Podcast – मराठी"
       videoId: "tvjdPuAh_PA"
 
-    - title: "what is Ayurveda?"
+    - title: "What is Ayurveda?"
       videoId: "8jD0by-Jzog"
 
     - title: "Panchakarma Explained"
