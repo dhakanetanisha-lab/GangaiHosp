@@ -6,11 +6,21 @@
 
 .videos h4 {
   text-align: center;
-  font-size: 16px;
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 110;
   margin-bottom: 50px;
   line-height: 1.8;
   color: #2f5d3a; /* match your green theme */
+}
+
+.videos-header p {
+  font-size: 18px;
+  color: #6b5b52;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 12px auto 0 auto;
+  text-align: center;
+  padding: 0 20px;
 }
 
 /* Grid Layout */
@@ -94,4 +104,14 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+}
+
+@media (max-width: 768px) {
+
+  .videos-header p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 0 16px;
+  }
+
 }
