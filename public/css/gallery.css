@@ -57,7 +57,7 @@ background: #f7faf8;
 /* ========================= */
 
 .gallery-card figcaption {
-  padding: 20px 28px;
+  padding: 12px 20px 8px 20px;
   font-size: 18px;
   font-weight: 700;
   color: #2f5d50;
@@ -72,11 +72,11 @@ background: #f7faf8;
 
 .gallery-card .group-images {
   display: flex;
-  gap: 40px;
-  padding: 30px;
+  gap: 16px;
+  padding: 8px 18px 12px 18px;
   overflow-x: auto;
+  align-items: center;
 }
-
 .gallery-card .group-images::-webkit-scrollbar {
   height: 6px;
 }
