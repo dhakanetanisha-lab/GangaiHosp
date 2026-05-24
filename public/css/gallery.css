@@ -4,7 +4,7 @@
 
 .gallery-section {
   max-width: 1400px;
-  margin: 70px auto;
+  margin: 15px auto 40px auto;
   padding: 0 20px;
 
 background: #f7faf8;
@@ -236,6 +236,8 @@ background: #f7faf8;
   overflow: hidden;
   margin: 0;
   padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* CONTAINER */
