@@ -18,8 +18,15 @@
 
     {{/each}}
 
-    <button class="carousel-prev">❮</button>
-    <button class="carousel-next">❯</button>
+    <!-- DOTS -->
+
+    <div class="carousel-dots">
+
+      {{#each carousel.items}}
+        <span class="carousel-dot {{#if @first}}active{{/if}}"></span>
+      {{/each}}
+
+    </div>
 
   </div>
 
@@ -115,12 +122,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
 
   const slides = document.querySelectorAll(".carousel-slide");
-
-  const nextBtn = document.querySelector(".carousel-next");
-  const prevBtn = document.querySelector(".carousel-prev");
+  const dots = document.querySelectorAll(".carousel-dot");
 
   let current = 0;
 
@@ -130,7 +136,12 @@ document.addEventListener("DOMContentLoaded", function () {
       slide.classList.remove("active");
     });
 
+    dots.forEach(dot => {
+      dot.classList.remove("active");
+    });
+
     slides[index].classList.add("active");
+    dots[index].classList.add("active");
   }
 
   function nextSlide() {
@@ -144,26 +155,26 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(current);
   }
 
-  function prevSlide() {
-
-    current--;
-
-    if (current < 0) {
-      current = slides.length - 1;
-    }
-
-    showSlide(current);
-  }
-
-  nextBtn.addEventListener("click", nextSlide);
-
-  prevBtn.addEventListener("click", prevSlide);
-
   /* AUTO SLIDE */
 
   setInterval(nextSlide, 3000);
 
+  /* DOT CLICK */
+
+  dots.forEach((dot, index) => {
+
+    dot.addEventListener("click", function () {
+
+      current = index;
+
+      showSlide(current);
+
+    });
+
+  });
+
 });
 
+</script>
 
 </script>
