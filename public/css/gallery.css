@@ -243,7 +243,7 @@ padding-bottom: 10px;
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 420px;
+  height: 260px;
   overflow: hidden;
 }
 
@@ -266,7 +266,7 @@ padding-bottom: 10px;
 
 .carousel-slide img {
   width: 100%;
-  height: 420px;
+  height: 260px;
   object-fit: cover;
   display: block;
 }
@@ -344,11 +344,11 @@ padding-bottom: 10px;
 @media (max-width: 768px) {
 
   .carousel-container {
-    height: 240px;
+    height: 180px;
   }
 
   .carousel-slide img {
-    height: 240px;
+    height: 180px;
   }
 
   .carousel-overlay h2 {
