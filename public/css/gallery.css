@@ -70,18 +70,18 @@ padding-bottom: 10px;
 /* IMAGES ROW */
 /* ========================= */
 
-.gallery-card .images-row {
+.gallery-card .group-images {
   display: flex;
   gap: 40px;
   padding: 30px;
   overflow-x: auto;
 }
 
-.gallery-card .images-row::-webkit-scrollbar {
+.gallery-card .group-images::-webkit-scrollbar {
   height: 6px;
 }
 
-.gallery-card .images-row::-webkit-scrollbar-thumb {
+.gallery-card .group-images::-webkit-scrollbar-thumb {
   background: rgba(47, 93, 80, 0.25); /* changed */
   border-radius: 10px;
 }
@@ -263,8 +263,6 @@ padding-bottom: 10px;
   display: block;
 }
 
-/* OVERLAY */
-
 .carousel-overlay {
   position: absolute;
   inset: 0;
@@ -272,6 +270,8 @@ padding-bottom: 10px;
   background: rgba(40, 60, 45, 0.45);
 
   display: flex;
+  flex-direction: column;
+
   justify-content: center;
   align-items: center;
 
