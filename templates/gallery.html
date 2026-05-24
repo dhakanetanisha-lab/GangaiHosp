@@ -24,6 +24,35 @@
       </figure>
     {{/each}}
   </div>
+  
+  <!-- TOP CAROUSEL -->
+
+<section class="top-carousel">
+
+  <div class="carousel-container">
+
+    {{#each carousel.items}}
+
+      <div class="carousel-slide {{#if @first}}active{{/if}}">
+
+        <img src="{{this.image}}" alt="{{this.caption}}">
+
+        <div class="carousel-overlay">
+          <h2>{{this.caption}}</h2>
+        </div>
+
+      </div>
+
+    {{/each}}
+
+    <!-- BUTTONS -->
+
+    <button class="carousel-prev">❮</button>
+    <button class="carousel-next">❯</button>
+
+  </div>
+
+</section>
 </section>
 
 <!-- LIGHTBOX -->
@@ -83,4 +112,57 @@ document.addEventListener("DOMContentLoaded", function () {
   window.closeLightbox = closeLightbox;
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const slides = document.querySelectorAll(".carousel-slide");
+
+  const nextBtn = document.querySelector(".carousel-next");
+  const prevBtn = document.querySelector(".carousel-prev");
+
+  let current = 0;
+
+  function showSlide(index) {
+
+    slides.forEach(slide => {
+      slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+  }
+
+  function nextSlide() {
+
+    current++;
+
+    if (current >= slides.length) {
+      current = 0;
+    }
+
+    showSlide(current);
+  }
+
+  function prevSlide() {
+
+    current--;
+
+    if (current < 0) {
+      current = slides.length - 1;
+    }
+
+    showSlide(current);
+  }
+
+  nextBtn.addEventListener("click", nextSlide);
+
+  prevBtn.addEventListener("click", prevSlide);
+
+  /* AUTO SLIDE */
+
+  setInterval(nextSlide, 3000);
+
+});
+
+
 </script>
