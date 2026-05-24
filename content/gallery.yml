@@ -1,15 +1,18 @@
 carousel:
   auto_slide_ms: 3000
 
-  items:
-    - image: "/icons/page1.jpg"
-      caption: "Authentic Ayurveda"
+items:
+  - image: "/icons/page1.jpg"
+    caption: "Authentic Ayurveda"
+    subtext: "Healing rooted in ancient wisdom"
 
-    - image: "/icons/page2.jpg"
-      caption: "Natural Therapies"
+  - image: "/icons/page2.jpg"
+    caption: "Natural Therapies"
+    subtext: "Pure, personalized treatments"
 
-    - image: "/icons/page3.jpg"
-      caption: "Holistic Wellness"
+  - image: "/icons/page3.jpg"
+    caption: "Holistic Wellness"
+    subtext: "Balance your body, mind & soul"
       
 groups:
   - caption: Doctor
