@@ -184,13 +184,6 @@
   }
 }
 
-
-
-
-
- 
- 
-
 @media (max-width: 768px) {
   .review-section {
     max-width: 100%;
@@ -290,6 +283,51 @@
   .homedetails {
     padding: 20px 16px 40px 16px !important;
     gap: 30px !important;
+  }
+
+}
+
+/* =========================
+   READ MORE BUTTON
+========================= */
+
+.about-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 28px;
+
+  background: #2f5d50;
+  color: #ffffff !important;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 18px rgba(47, 93, 80, 0.15);
+}
+
+/* HOVER */
+
+.about-btn:hover {
+  background: #23473d;
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 14px 28px rgba(47, 93, 80, 0.22);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .about-btn {
+    padding: 10px 22px;
+    font-size: 15px;
   }
 
 }
