@@ -38,6 +38,7 @@
 /* Add breathing space before slider */
 .slider {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -46,11 +47,12 @@
 /* ===================== */
 .about {
   display: flex;
-  gap: 60px;
-  padding: 90px 12%;
+  gap: 30px;
+  padding: 25px 12% 20px;
   align-items: flex-start;
-  flex-direction: column;  
+  flex-direction: column;
 }
+
 
 .about-item {
   display: flex;
@@ -185,8 +187,8 @@
 /* DOCTORS SECTION */
 /* ===================== */
 .doctors {
-  background: #f6fbf7;  /* very soft herbal tint */
-  padding: 90px 20px;
+  background: #f6fbf7;
+  padding: 20px 20px 25px;
   text-align: center;
 }
 
@@ -198,9 +200,9 @@
 }
 
 .doctors p {
-  color: #5f6f63; 
+  color: #5f6f63;
   max-width: 700px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   line-height: 1.7;
 }
 
