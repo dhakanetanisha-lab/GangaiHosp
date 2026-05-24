@@ -1,6 +1,6 @@
 /* Section Styling */
 .videos {
-  padding: 70px 5%;
+  padding: 50px 5%;
   background: #f6f8f5;
 }
 
@@ -9,6 +9,7 @@
   font-size: 5px;
   font-weight: 300;
   margin-bottom: 50px;
+  line-height: 1.8;
   color: #2f5d3a; /* match your green theme */
 }
 
