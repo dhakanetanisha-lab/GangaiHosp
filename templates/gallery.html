@@ -1,3 +1,31 @@
+<!-- TOP CAROUSEL -->
+
+<section class="top-carousel">
+
+  <div class="carousel-container">
+
+    {{#each carousel.items}}
+
+      <div class="carousel-slide {{#if @first}}active{{/if}}">
+
+        <img src="{{this.image}}" alt="{{this.caption}}">
+
+        <div class="carousel-overlay">
+          <h2>{{this.caption}}</h2>
+        </div>
+
+      </div>
+
+    {{/each}}
+
+    <button class="carousel-prev">❮</button>
+    <button class="carousel-next">❯</button>
+
+  </div>
+
+</section>
+
+
 <section class="gallery-section">
   <div class="gallery-grid">
     {{#each groups}}
@@ -25,34 +53,7 @@
     {{/each}}
   </div>
   
-  <!-- TOP CAROUSEL -->
 
-<section class="top-carousel">
-
-  <div class="carousel-container">
-
-    {{#each carousel.items}}
-
-      <div class="carousel-slide {{#if @first}}active{{/if}}">
-
-        <img src="{{this.image}}" alt="{{this.caption}}">
-
-        <div class="carousel-overlay">
-          <h2>{{this.caption}}</h2>
-        </div>
-
-      </div>
-
-    {{/each}}
-
-    <!-- BUTTONS -->
-
-    <button class="carousel-prev">❮</button>
-    <button class="carousel-next">❯</button>
-
-  </div>
-
-</section>
 </section>
 
 <!-- LIGHTBOX -->
