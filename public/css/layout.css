@@ -837,3 +837,47 @@ body {
     object-fit: cover;
   }
 }
+/* =========================
+   FORCE PERFECT CIRCLE LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px !important;
+  min-height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+
+  border-radius: 50% !important;
+  object-fit: cover !important;
+
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  .logo img {
+    width: 65px !important;
+    height: 65px !important;
+    min-width: 65px !important;
+    min-height: 65px !important;
+    max-width: 65px !important;
+    max-height: 65px !important;
+
+    border-radius: 50% !important;
+    object-fit: cover !important;
+
+    aspect-ratio: 1 / 1;
+  }
+
+}
