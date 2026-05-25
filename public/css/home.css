@@ -20,15 +20,6 @@
   margin-bottom: 0px; /* reduced margin */
 }
 
-.essence p {
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  color: #5c4a44;
-  line-height: 1.6;   /* slightly tighter */
-  font-size: 16px;    /* optional: reduce font-size if needed */
-}
-
 
 /* ===================== */
 /* HOMDETAILS SECTION */
@@ -330,4 +321,30 @@
     font-size: 15px;
   }
 
+}
+
+/* =========================
+   FIX ESSENCE TEXT ALIGNMENT
+========================= */
+
+.essence {
+  text-align: center !important;
+}
+
+.essence-heading,
+.essence-english,
+.essence-marathi {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* English text */
+.essence-english {
+  max-width: 900px;
+}
+
+/* Marathi text */
+.essence-marathi {
+  max-width: 1000px;
 }
