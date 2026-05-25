@@ -72,9 +72,11 @@ background: #f7faf8;
 
 .gallery-card .group-images {
   display: flex;
+  flex-direction: column;   /* vertical layout */
   gap: 16px;
-  padding: 8px 18px 12px 18px;
-  overflow-x: auto;
+
+  padding: 12px 18px 18px;
+
   align-items: center;
 }
 .gallery-card .group-images::-webkit-scrollbar {
@@ -89,16 +91,20 @@ background: #f7faf8;
 /* ========================= */
 /* IMAGE STYLE */
 /* ========================= */
-
 .gallery-card img {
-  height: 260px; /* slightly reduced for balance */
-  width: auto;
-  flex-shrink: 0;
-  background: #ffffff;               /* white card background */
-  padding: 4px;                     /* space inside border */
+  width: 100%;
+  max-width: 700px;
+
+  height: auto;
+
+  background: #ffffff;
+  padding: 4px;
+
   border-radius: 16px;
-  border: 1px solid #e3ebe7;         /* soft green-grey border */
+  border: 1px solid #e3ebe7;
+
   box-shadow: 0 8px 18px rgba(47, 93, 80, 0.08);
+
   cursor: pointer;
   transition: all 0.3s ease;
 }
