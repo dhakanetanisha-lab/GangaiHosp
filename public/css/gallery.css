@@ -345,14 +345,14 @@ background: #f7faf8;
 
 }
 /* =========================
-   NATURAL PHONE-GALLERY STYLE
+   COMPACT PHONE GALLERY
 ========================= */
 
 .gallery-card .group-images {
-  column-count: 4;
-  column-gap: 12px;
+  column-count: 5;      /* more columns = smaller thumbnails */
+  column-gap: 8px;
 
-  padding: 16px;
+  padding: 12px;
 }
 
 /* IMAGE STYLE */
@@ -363,16 +363,16 @@ background: #f7faf8;
 
   display: block;
 
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 
-  border-radius: 14px;
+  border-radius: 10px;
 
   background: #fff;
-  padding: 3px;
+  padding: 2px;
 
   border: 1px solid #e3ebe7;
 
-  box-shadow: 0 4px 10px rgba(47, 93, 80, 0.08);
+  box-shadow: 0 2px 8px rgba(47, 93, 80, 0.08);
 
   break-inside: avoid;
 
@@ -385,7 +385,7 @@ background: #f7faf8;
 
 .gallery-card img:hover {
   transform: scale(1.02);
-  box-shadow: 0 10px 24px rgba(47, 93, 80, 0.16);
+  box-shadow: 0 8px 18px rgba(47, 93, 80, 0.16);
 }
 
 /* TABLET */
@@ -393,7 +393,7 @@ background: #f7faf8;
 @media (max-width: 992px) {
 
   .gallery-card .group-images {
-    column-count: 3;
+    column-count: 4;
   }
 
 }
@@ -403,8 +403,9 @@ background: #f7faf8;
 @media (max-width: 768px) {
 
   .gallery-card .group-images {
-    column-count: 2;
-    column-gap: 10px;
+    column-count: 3;
+    column-gap: 6px;
+    padding: 8px;
   }
 
 }
@@ -415,7 +416,6 @@ background: #f7faf8;
 
   .gallery-card .group-images {
     column-count: 2;
-    padding: 10px;
   }
 
 }
