@@ -55,7 +55,10 @@ function placeOrder() {
 //
 
 const el = document.querySelector('.whatsapp-contact span');
-const adminPhone = el?.innerText.replace(/\D/g, '');
+//const adminPhone = el?.innerText.replace(/\D/g, '');
+
+const adminPhone = window.whatsappNumber;
+
 
 console.log(adminPhone); // 919890298802 
 

@@ -1,5 +1,9 @@
 const el = document.querySelector('.whatsapp-contact span');
-const ADMIN_WHATSAPP = el?.innerText.replace(/\D/g, '');
+//const ADMIN_WHATSAPP = el?.innerText.replace(/\D/g, '');
+
+const ADMIN_WHATSAPP = window.whatsappNumber;
+
+
 
 console.log(ADMIN_WHATSAPP); // 919890298802 
 
