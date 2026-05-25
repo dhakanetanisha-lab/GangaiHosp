@@ -70,13 +70,13 @@
 
 .product-info ul {
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
 }
 
 .product-info ul li {
   font-size: 14px;
   color: #5f6f63;
-  margin-bottom: 6px;
+  margin-bottom: 1px;
 }
 
 /* BUTTON */
@@ -160,13 +160,13 @@
 .features {
   list-style: none;
   padding: 0;
-  margin-bottom: 36px;
+  margin-bottom: 2px;
 }
 
 .features li {
   font-size: 17px;
   color: #4f5f56;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
 }
 
 

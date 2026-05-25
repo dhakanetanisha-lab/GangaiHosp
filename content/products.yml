@@ -18,55 +18,58 @@ data:
   products:
     
     - title: "Shuddhi Kalpa"
-      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+      description: "Ayurvedic Digestive & Detox Support  **Shuddhi Kalpa** is a natural Ayurvedic digestive and detox formula by Ayutej Enterprises, enriched with Haritaki Churna (Terminalia chebula). It helps improve digestion, relieve acidity, constipation, bloating, gas, and supports gut cleansing naturally. This antioxidant-rich Rasayan promotes better metabolism, gut health, and overall wellness."
       features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
+        - ✅ 100% Natural
+        - ✅ Chemical Free
+        - ✅ GMP Certified
+        - ✅ FDA Approved
+        - ✅ Premium Ayurvedic Wellness Product
 
       button_text: "Order Now"
       image: "/icons/ShuddhiKalpa.png"
-      price: "RS 499.00"
+      price: "RS 300.00"
         
     - title: "Kumkumadi cream"
-      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+      description: "Kumkumadi Cream is a premium Ayurvedic skincare formula by [Ayutej Enterprises] enriched with Kumkumadi Oil, Saffron, Turmeric, Shea Butter, and Sandalwood extracts. It deeply moisturizes the skin, improves complexion, enhances natural glow, and helps prevent acne & pimples naturally. This nourishing cream supports healthy, soft, and radiant skin for daily skincare wellness"
       features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
+        - ✅ Moisturizes Skin
+        - ✅ Improves Complexion
+        - ✅ Enhances Skin Glow
+        - ✅ Helps Prevent Acne & Pimples
+        - ✅ Natural Ayurvedic Skin Care Formula
 
       button_text: "Order Now"
       image: "/icons/Kumkumadicream.png"
-      price: "RS 499.00"
+      price: "RS 299.00"
 
     - title: "Kumkumadi Tailam"
-      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+      description: "*Kumkumadi Tailam** is a luxurious Ayurvedic facial oil by [Ayutej Enterprises] enriched with Kesar, Chandan, Manjistha, and other powerful Ayurvedic herbs. It helps improve complexion, reduce spots & blemishes, prevent hyperpigmentation, and support healthy glowing skin naturally. This nourishing oil also helps reduce acne, scars, stress marks, and signs of aging while deeply moisturizing the skin"
       features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
+        - ✅ Improves Skin Glow & Complexion
+        - ✅ Reduces Spots, Scars & Blemishes
+        - ✅ Helps Prevent Acne & Hyperpigmentation
+        - ✅ Anti-aging & Skin Nourishing Formula
+        - ✅ Natural Ayurvedic Skincare Oil
 
       button_text: "Order Now"
       image: "/icons/KumkumadiTailam.jpg"
-      price: "RS 499.00"
+      price: "RS 350.00"
 
-    - title: "FACE WASH"
-      description: " Testing  : testoing A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+    - title: " Ayutej Saundaryam Mix Herbs Face Wash"
+      description: " Ayutej Saundaryam Mix Herbs Face Wash is a premium Ayurvedic skincare formula enriched with powerful natural herbs like Chandan, Padmaka, Yashtimadhu, and Manjishta. This gentle yet effective face wash deeply cleanses the skin, removes excess oil & impurities, and helps prevent acne & pimples naturally.
+Its herbal formulation keeps the skin fresh, soft, hydrated, and naturally glowing without causing dryness. Suitable for all skin types, this Ayurvedic face wash supports healthy and radiant skin for daily skincare wellness."
       features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
+        - ✅ Deep Cleansing Formula
+        - ✅ Helps Prevent Acne & Pimples
+        - ✅ Keeps Skin Hydrated & Fresh
+        - ✅ Enhances Natural Skin Glow
+        - ✅ Suitable For All Skin Types
+        - ✅ Natural Ayurvedic Skin Care Formula
+        - ✅Free From Sulphates, Silicones & Parabens
 
       button_text: "Order Now"
       image: "/icons/FaceWash.jpg"
-      price: "RS 499.00"
+      price: "RS 299.00"
   footer:
     text: "© 2026 Gangai Hospital"

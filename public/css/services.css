@@ -173,13 +173,13 @@
 .features {
   list-style: none;
   padding: 0;
-  margin-bottom: 36px;
+  margin-bottom: 2px;
 }
 
 .features li {
   font-size: 17px;
   color: #4e463f;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
 }
 
 .btn-primary {
