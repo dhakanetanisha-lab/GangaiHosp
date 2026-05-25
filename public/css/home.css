@@ -208,13 +208,13 @@
   transform: scale(1.2);
 }
 
-/* =========================
+//* =========================
    ESSENCE SECTION
 ========================= */
 
 .essence {
   text-align: center;
-  padding: 50px 20px;
+  padding: 25px 20px 20px;   /* reduced top/bottom space */
   background: #f8f5ef;
 }
 
@@ -222,53 +222,63 @@
 .essence-heading {
   font-family: 'Playfair Display', serif;
   font-size: 54px;
-  line-height: 1.25;
+  line-height: 1.15;         /* tighter line spacing */
   color: #4e3f36;
-  margin-bottom: 26px;
+
+  margin: 0 auto 12px;       /* reduced bottom margin */
+  max-width: 1200px;
 }
 
 /* English Text */
 .essence-english {
   font-size: 20px;
-  line-height: 1.8;
+  line-height: 1.5;
+
   color: #5f4a3d;
+
   max-width: 900px;
-  margin: 0 auto 24px auto;
+
+  margin: 0 auto 10px auto;  /* reduced spacing */
+  text-align: center;
 }
 
 /* Marathi Text */
 .essence-marathi {
   font-size: 19px;
-  line-height: 2;
+  line-height: 1.7;
+
   color: #6e5446;
-  max-width: 1000px;
+
+  max-width: 1200px;
+
   margin: 0 auto;
+  text-align: center;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
 
   .essence {
-    padding: 40px 16px;
+    padding: 18px 14px 16px;
   }
 
   .essence-heading {
     font-size: 30px;
-    line-height: 1.35;
-    margin-bottom: 18px;
+    line-height: 1.25;
+    margin-bottom: 10px;
   }
 
   .essence-english {
     font-size: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
+    line-height: 1.5;
   }
 
   .essence-marathi {
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.7;
   }
 }
-
 @media (max-width: 768px) {
 
   .homedetails {
