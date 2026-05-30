@@ -255,6 +255,130 @@
   text-align: center;
 }
 
+
+/* =====================================
+   PANCHAKARMA TREATMENTS HOME SECTION
+===================================== */
+
+.treatment-wheel-section {
+  padding: 70px 20px 40px;
+  text-align: center;
+  background: #f8f5ef;
+}
+
+.wheel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #422b23;
+  margin-bottom: 40px;
+}
+
+.treatment-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.treatment-circle {
+  width: 180px;
+  text-decoration: none;
+  color: #422b23;
+  transition: all .3s ease;
+}
+
+.treatment-circle:hover {
+  transform: translateY(-8px);
+}
+
+.treatment-circle img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px solid #6b8e23;
+
+  box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+.treatment-circle span {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* DETAILS SECTION */
+
+.homepage-treatments {
+  margin-top: 50px;
+}
+
+.home-treatment-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 10%;
+  border-bottom: 1px solid #eee;
+}
+
+.home-treatment-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.home-treatment-image img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.home-treatment-content {
+  flex: 1;
+}
+
+.home-treatment-content h2 {
+  font-family: 'Playfair Display', serif;
+  color: #422b23;
+  margin-bottom: 20px;
+}
+
+.home-treatment-content p {
+  color: #5c4a44;
+  line-height: 1.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .wheel-title {
+    font-size: 32px;
+  }
+
+  .treatment-circle {
+    width: 140px;
+  }
+
+  .treatment-circle img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-treatment-block {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -357,4 +481,1040 @@
 /* Marathi text */
 .essence-marathi {
   max-width: 1000px;
+}
+
+/* =====================================
+   CIRCULAR TREATMENT WHEEL
+===================================== */
+
+.treatment-wheel {
+
+  position: relative;
+
+  width: 700px;
+  height: 700px;
+
+  margin: 40px auto 0;
+}
+
+.wheel-center {
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.wheel-center img {
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 6px solid #6b8e23;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.treatment-wheel .treatment-circle {
+
+  position: absolute;
+
+  width: 150px;
+
+  text-align: center;
+}
+
+/* TOP */
+.wheel-item-0 {
+  top: 0;
+  left: 275px;
+}
+
+/* TOP RIGHT */
+.wheel-item-1 {
+  top: 90px;
+  right: 40px;
+}
+
+/* RIGHT */
+.wheel-item-2 {
+  top: 275px;
+  right: 0;
+}
+
+/* BOTTOM RIGHT */
+.wheel-item-3 {
+  bottom: 90px;
+  right: 40px;
+}
+
+/* BOTTOM */
+.wheel-item-4 {
+  bottom: 0;
+  left: 275px;
+}
+
+/* BOTTOM LEFT */
+.wheel-item-5 {
+  bottom: 90px;
+  left: 40px;
+}
+
+/* LEFT */
+.wheel-item-6 {
+  top: 275px;
+  left: 0;
+}
+
+/* TOP LEFT */
+.wheel-item-7 {
+  top: 90px;
+  left: 40px;
+}
+
+@media (max-width: 768px) {
+
+  .treatment-wheel {
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .wheel-center {
+    display: none;
+  }
+
+  .treatment-wheel .treatment-circle {
+
+    position: static;
+    width: 140px;
+  }
+
+}
+
+.treatment-detail-panel {
+
+  display: none;
+
+  max-width: 1200px;
+
+  margin: 50px auto;
+
+  padding: 40px;
+
+  gap: 40px;
+
+  align-items: center;
+
+  background: #fff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 35px rgba(0,0,0,.08);
+}
+
+.treatment-detail-panel.active {
+  display: flex;
+}
+
+@media(max-width:768px){
+
+  .treatment-detail-panel.active{
+    flex-direction:column;
+  }
+
+}
+
+
+/* ==========================
+   HOME PRODUCTS
+========================== */
+
+.home-products-section {
+
+  padding: 80px 20px;
+
+  background: #f8f5ef;
+
+  text-align: center;
+}
+
+.products-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+  gap: 30px;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+
+.product-card:hover {
+
+  transform: translateY(-8px);
+}
+
+.product-card img {
+
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto;
+}
+
+
+.product-detail-panel {
+
+  display: none;
+
+  max-width: 1200px;
+
+  margin: 50px auto;
+
+  padding: 40px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  gap: 40px;
+
+  align-items: center;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+.product-detail-panel.active {
+
+  display: flex;
+}
+.product-card {
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+
+/* Space between slider and green header section */
+.slider {
+  margin-bottom: 20px;
+}
+
+/* ===================== */
+/* ESSENCE */
+/* ===================== */
+.essence {
+  padding: 20px 5px;  /* reduced from 90px to 50px */
+  text-align: center;
+}
+
+.essence h1 {
+  font-family: 'Playfair Display', serif;
+  color: #422b23;
+  font-size: 36px;     /* slightly smaller */
+  font-weight: 400;
+  margin-bottom: 0px; /* reduced margin */
+}
+
+
+/* ===================== */
+/* HOMDETAILS SECTION */
+/* ===================== */
+.homedetails {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 35px 12% 70px 12%;
+}
+
+.homedetails-item {
+  display: flex;
+  flex-direction: row;      /* side-by-side on desktop */
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.homedetails img {
+  width: 380px;
+  border-radius: 18px;
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.homedetails img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(0,0,0,0.16);
+}
+
+.homedetails-text {
+  flex: 1;
+  text-align: left;
+}
+
+.homedetails h2 {
+  font-family: 'Playfair Display', serif;
+  color: #422b23;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.homedetails p, .homedetails ul {
+  color: #5c4a44;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Button inside homedetails */
+.homedetails button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #422b23;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.homedetails button:hover {
+  background: #6b8e23;
+}
+
+
+
+.testimonial-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #d1c7c3;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonial-dots button.active {
+  background: #422b23;
+  transform: scale(1.3);
+}
+  
+  
+  
+/* ===================== */
+/* RESPONSIVE: Mobile / Tablet */
+/* ===================== */
+@media (max-width: 992px) {
+ .homedetails-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .homedetails img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .homedetails-text {
+    width: 100%;
+  }
+
+  .homedetails h2 {
+    font-size: 28px;
+  }
+
+  .homedetails p, .homedetails ul {
+    font-size: 16px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .homedetails-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .homedetails img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .homedetails-text {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .homedetails-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .homedetails img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .homedetails-text {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-section {
+    max-width: 100%;
+    padding: 18px 16px;
+  }
+}
+
+/* DOT CONTAINER */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* EACH DOT */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ACTIVE DOT */
+.dot.active {
+  background: #ffffff;
+  transform: scale(1.2);
+}
+
+//* =========================
+   ESSENCE SECTION
+========================= */
+
+.essence {
+  text-align: center;
+  padding: 25px 20px 20px;   /* reduced top/bottom space */
+  background: #f8f5ef;
+}
+
+/* Heading */
+.essence-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  line-height: 1.15;         /* tighter line spacing */
+  color: #4e3f36;
+
+  margin: 0 auto 12px;       /* reduced bottom margin */
+  max-width: 1200px;
+}
+
+/* English Text */
+.essence-english {
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: #5f4a3d;
+
+  max-width: 900px;
+
+  margin: 0 auto 10px auto;  /* reduced spacing */
+  text-align: center;
+}
+
+/* Marathi Text */
+.essence-marathi {
+  font-size: 19px;
+  line-height: 1.7;
+
+  color: #6e5446;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* =====================================
+   PANCHAKARMA TREATMENTS HOME SECTION
+===================================== */
+
+.treatment-wheel-section {
+  padding: 70px 20px 40px;
+  text-align: center;
+  background: #f8f5ef;
+}
+
+.wheel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #422b23;
+  margin-bottom: 40px;
+}
+
+.treatment-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.treatment-circle {
+  width: 180px;
+  text-decoration: none;
+  color: #422b23;
+  transition: all .3s ease;
+}
+
+.treatment-circle:hover {
+  transform: translateY(-8px);
+}
+
+.treatment-circle img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px solid #6b8e23;
+
+  box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+.treatment-circle span {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* DETAILS SECTION */
+
+.homepage-treatments {
+  margin-top: 50px;
+}
+
+.home-treatment-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 10%;
+  border-bottom: 1px solid #eee;
+}
+
+.home-treatment-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.home-treatment-image img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.home-treatment-content {
+  flex: 1;
+}
+
+.home-treatment-content h2 {
+  font-family: 'Playfair Display', serif;
+  color: #422b23;
+  margin-bottom: 20px;
+}
+
+.home-treatment-content p {
+  color: #5c4a44;
+  line-height: 1.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .wheel-title {
+    font-size: 32px;
+  }
+
+  .treatment-circle {
+    width: 140px;
+  }
+
+  .treatment-circle img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-treatment-block {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .essence {
+    padding: 18px 14px 16px;
+  }
+
+  .essence-heading {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  .essence-english {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+  .essence-marathi {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 768px) {
+
+  .homedetails {
+    padding: 20px 16px 40px 16px !important;
+    gap: 30px !important;
+  }
+
+}
+
+/* =========================
+   READ MORE BUTTON
+========================= */
+
+.about-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 28px;
+
+  background: #2f5d50;
+  color: #ffffff !important;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 18px rgba(47, 93, 80, 0.15);
+}
+
+/* HOVER */
+
+.about-btn:hover {
+  background: #23473d;
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 14px 28px rgba(47, 93, 80, 0.22);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .about-btn {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
+
+}
+
+/* =========================
+   FIX ESSENCE TEXT ALIGNMENT
+========================= */
+
+.essence {
+  text-align: center !important;
+}
+
+.essence-heading,
+.essence-english,
+.essence-marathi {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* English text */
+.essence-english {
+  max-width: 900px;
+}
+
+/* Marathi text */
+.essence-marathi {
+  max-width: 1000px;
+}
+
+/* =====================================
+   CIRCULAR TREATMENT WHEEL
+===================================== */
+
+.treatment-wheel {
+
+  position: relative;
+
+  width: 700px;
+  height: 700px;
+
+  margin: 40px auto 0;
+}
+
+.wheel-center {
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.wheel-center img {
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 6px solid #6b8e23;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.treatment-wheel .treatment-circle {
+
+  position: absolute;
+
+  width: 150px;
+
+  text-align: center;
+}
+
+/* TOP */
+.wheel-item-0 {
+  top: 0;
+  left: 275px;
+}
+
+/* TOP RIGHT */
+.wheel-item-1 {
+  top: 90px;
+  right: 40px;
+}
+
+/* RIGHT */
+.wheel-item-2 {
+  top: 275px;
+  right: 0;
+}
+
+/* BOTTOM RIGHT */
+.wheel-item-3 {
+  bottom: 90px;
+  right: 40px;
+}
+
+/* BOTTOM */
+.wheel-item-4 {
+  bottom: 0;
+  left: 275px;
+}
+
+/* BOTTOM LEFT */
+.wheel-item-5 {
+  bottom: 90px;
+  left: 40px;
+}
+
+/* LEFT */
+.wheel-item-6 {
+  top: 275px;
+  left: 0;
+}
+
+/* TOP LEFT */
+.wheel-item-7 {
+  top: 90px;
+  left: 40px;
+}
+
+@media (max-width: 768px) {
+
+  .treatment-wheel {
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .wheel-center {
+    display: none;
+  }
+
+  .treatment-wheel .treatment-circle {
+
+    position: static;
+    width: 140px;
+  }
+
+}
+
+.treatment-detail-panel {
+
+  display: none;
+
+  max-width: 1200px;
+
+  margin: 50px auto;
+
+  padding: 40px;
+
+  gap: 40px;
+
+  align-items: center;
+
+  background: #fff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 35px rgba(0,0,0,.08);
+}
+
+.treatment-detail-panel.active {
+  display: flex;
+}
+
+@media(max-width:768px){
+
+  .treatment-detail-panel.active{
+    flex-direction:column;
+  }
+
+}
+
+
+/* ==========================
+   HOME PRODUCTS
+========================== */
+
+.home-products-section {
+
+  padding: 80px 20px;
+
+  background: #f8f5ef;
+
+  text-align: center;
+}
+
+.products-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  align-items: start;
+}
+
+.product-card img {
+
+  width: 100%;
+
+  max-width: 180px;
+
+  height: 180px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 15px auto;
+}
+
+.product-card {
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+  min-height: 280px;
+}
+.product-card:hover {
+
+  transform: translateY(-8px);
+}
+
+.product-detail-panel {
+
+  display: none;
+
+  max-width: 1200px;
+
+  margin: 50px auto;
+
+  padding: 40px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  gap: 40px;
+
+  align-items: center;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+.product-detail-panel.active {
+
+  display: flex;
+}
+.product-card {
+
+  background: white;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+  padding: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  min-height: 300px;
+}
+
+.product-card h3 {
+
+  margin-top: 15px;
+
+  color: #422b23;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  background: transparent;
+
+  padding: 0;
+
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+
+  .products-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .products-grid {
+
+    grid-template-columns: 1fr;
+  }
 }

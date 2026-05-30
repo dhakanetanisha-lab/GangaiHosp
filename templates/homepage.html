@@ -70,7 +70,131 @@
   {{/each}}
 </section>
 
+<section class="treatment-wheel-section">
 
+    <div class="container">
+
+        <h2 class="wheel-title">
+            Panchakarma Treatments
+        </h2>
+
+<div class="treatment-wheel">
+
+    <div class="wheel-center">
+        <img src="/icons/logo.jpg" alt="Gangai Hospital">
+    </div>
+
+    {{#each homeTreatments}}
+
+    <a
+    href="#"
+    class="treatment-circle wheel-item-{{@index}}"
+
+    data-title="{{title}}"
+    data-description="{{description}}"
+    data-image="{{image}}"
+>
+
+        <img src="{{image}}" alt="{{title}}">
+
+        <span>{{title}}</span>
+
+    </a>
+
+    {{/each}}
+
+</div>
+    </div>
+
+</section>
+
+<section class="treatment-detail-panel" id="treatmentDetail">
+
+    <div class="home-treatment-image">
+        <img id="detailImage" src="" alt="">
+    </div>
+
+    <div class="home-treatment-content">
+
+        <h2 id="detailTitle"></h2>
+
+        <p id="detailDescription"></p>
+
+        <a href="/services.html" class="about-btn">
+            View More
+        </a>
+
+    </div>
+
+</section>
+
+<section class="home-products-section">
+
+    <h2 class="wheel-title">
+        Ayurvedic Products
+    </h2>
+
+    <div class="products-grid">
+
+        {{#each homeProducts}}
+
+        <div
+            class="product-card"
+
+            data-title="{{title}}"
+            data-description="{{description}}"
+            data-image="{{image}}"
+            data-price="{{price}}"
+        >
+
+            <img src="{{image}}" alt="{{title}}">
+
+            <h3>{{title}}</h3>
+
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</section>
+
+<section
+    class="product-detail-panel"
+    id="homeProductDetail"
+>
+
+    <div class="product-image">
+
+        <img
+            id="homeProductImage"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+    <div class="product-details">
+
+        <h2 id="homeProductTitle"></h2>
+
+        <p id="homeProductDescription"></p>
+
+        <p
+            class="Price"
+            id="homeProductPrice"
+        ></p>
+
+        <a
+            href="/products.html"
+            class="about-btn"
+        >
+            View More
+        </a>
+
+    </div>
+
+</section>
 
 <!-- TESTIMONIALS -->
 <section class="testimonials-section">

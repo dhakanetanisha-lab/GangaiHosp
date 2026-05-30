@@ -87,6 +87,12 @@ function buildSite() {
 
   const homepage = loadYAML('./content/homepage.yml');
 
+const services = loadYAML('./content/services.yml');
+homepage.homeTreatments = services.data.servicess;
+
+const products = loadYAML('./content/products.yml');
+homepage.homeProducts = products.data.products;
+
   homepage.testimonials ||= {};
   homepage.testimonials.items = reviews.approved.map(r => ({
     message: r.message,
@@ -123,7 +129,7 @@ function buildSite() {
      PRODUCTS
   ============================== */
 
-  const products = loadYAML('./content/products.yml');
+  //const products = loadYAML('./content/products.yml');
 
   buildPage(
     {
@@ -139,7 +145,7 @@ function buildSite() {
      SERVICES
   ============================== */
 
-  const services = loadYAML('./content/services.yml');
+  //const services = loadYAML('./content/services.yml');
 
   buildPage(
     {
