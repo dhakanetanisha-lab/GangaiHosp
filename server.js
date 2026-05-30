@@ -11,6 +11,10 @@ const app = express();
 app.use(express.json());
 
 
+const ADMIN_PASSWORD = "MySecret123";
+
+
+
 /* =========================
    STATIC FILES
 ========================= */
@@ -49,6 +53,25 @@ function runBuild(res, msg) {
   });
 }
 
+
+/* =========================
+   ADMIN LOGIN
+========================= */
+
+app.post('/admin/login', (req, res) => {
+
+  const { password } = req.body;
+
+  if (password === ADMIN_PASSWORD) {
+    return res.json({ success: true });
+  }
+
+  res.status(401).json({
+    success: false,
+    message: 'Invalid password'
+  });
+
+});
 /* =========================
    SAVE YAML
 ========================= */
@@ -191,6 +214,9 @@ app.post('/admin/upload-gallery', galleryUpload.single('image'), (req, res) => {
 
   res.json({ success: true, path: `gallery/${req.file.filename}` });
 });
+
+
+
 
 
 
