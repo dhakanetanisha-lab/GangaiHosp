@@ -491,8 +491,8 @@ html {
 
   position: relative;
 
-  width: 700px;
-  height: 700px;
+  width: 850px;
+  height: 850px;
 
   margin: 40px auto 0;
 }
@@ -501,8 +501,8 @@ html {
 
   position: absolute;
 
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
 
   top: 50%;
   left: 50%;
@@ -524,73 +524,81 @@ html {
 }
 
 .treatment-wheel .treatment-circle {
-
   position: absolute;
-
-  width: 150px;
-
+  width: 220px;
   text-align: center;
+}
+
+.treatment-circle span {
+  display: block;
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #422b23;
+
+  min-height: 50px; /* keeps all labels aligned */
 }
 
 /* TOP */
 .wheel-item-0 {
   top: 0;
-  left: 275px;
+  left: 315px;
 }
 
 /* TOP RIGHT */
 .wheel-item-1 {
-  top: 90px;
-  right: 40px;
+  top: 80px;
+  right: 0;
 }
 
 /* RIGHT */
 .wheel-item-2 {
-  top: 275px;
-  right: 0;
+  top: 315px;
+  right: -20px;
 }
 
 /* BOTTOM RIGHT */
 .wheel-item-3 {
-  bottom: 90px;
-  right: 40px;
+  bottom: 80px;
+  right: 0;
 }
 
 /* BOTTOM */
 .wheel-item-4 {
   bottom: 0;
-  left: 275px;
+  left: 315px;
 }
 
 /* BOTTOM LEFT */
 .wheel-item-5 {
-  bottom: 90px;
-  left: 40px;
+  bottom: 80px;
+  left: 0;
 }
 
 /* LEFT */
 .wheel-item-6 {
-  top: 275px;
-  left: 0;
+  top: 315px;
+  left: -20px;
 }
 
 /* TOP LEFT */
 .wheel-item-7 {
-  top: 90px;
-  left: 40px;
+  top: 80px;
+  left: 0;
 }
 
 @media (max-width: 768px) {
 
   .treatment-wheel {
-
     width: 100%;
     height: auto;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    justify-items: center;
   }
 
   .wheel-center {
@@ -598,46 +606,20 @@ html {
   }
 
   .treatment-wheel .treatment-circle {
-
     position: static;
-    width: 140px;
+    width: 160px;
   }
 
-}
-
-.treatment-detail-panel {
-
-  display: none;
-
-  max-width: 1200px;
-
-  margin: 50px auto;
-
-  padding: 40px;
-
-  gap: 40px;
-
-  align-items: center;
-
-  background: #fff;
-
-  border-radius: 20px;
-
-  box-shadow: 0 10px 35px rgba(0,0,0,.08);
-}
-
-.treatment-detail-panel.active {
-  display: flex;
-}
-
-@media(max-width:768px){
-
-  .treatment-detail-panel.active{
-    flex-direction:column;
+  .treatment-circle img {
+    width: 130px;
+    height: 130px;
   }
 
+  .treatment-circle span {
+    font-size: 15px;
+    min-height: auto;
+  }
 }
-
 
 /* ==========================
    HOME PRODUCTS
