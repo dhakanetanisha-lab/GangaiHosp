@@ -261,7 +261,7 @@
 ===================================== */
 
 .treatment-wheel-section {
-  padding: 70px 20px 40px;
+  padding: 30px 20px 20px;
   text-align: center;
   background: #f8f5ef;
 }
@@ -270,7 +270,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 42px;
   color: #422b23;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .treatment-grid {
@@ -281,15 +281,15 @@
 }
 
 .treatment-circle {
-  width: 180px;
+  width: 160px;
   text-decoration: none;
   color: #422b23;
   transition: all .3s ease;
 }
 
 .treatment-circle img {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
 
@@ -300,7 +300,7 @@
 
 .treatment-circle span {
   display: block;
-  margin-top: 12px;
+  margin-top: 8px;
   font-weight: 600;
   font-size: 16px;
 }
@@ -487,9 +487,9 @@ html {
 
 .treatment-wheel {
   position: relative;
-  width: 750px;
-  height: 750px;
-  margin: 40px auto;
+  width: 600px;
+  height: 600px;
+  margin: 20px auto;
 }
 
 /* TOP */
@@ -501,8 +501,8 @@ html {
 
 /* TOP RIGHT */
 .wheel-item-1 {
-  top: 90px;
-  right: 40px;
+  top: 50px;
+  right: 20px;
 }
 
 /* RIGHT */
@@ -514,8 +514,8 @@ html {
 
 /* BOTTOM RIGHT */
 .wheel-item-3 {
-  bottom: 90px;
-  right: 40px;
+  bottom: 50px;
+  right: 20px;
 }
 
 /* BOTTOM */
@@ -527,8 +527,8 @@ html {
 
 /* BOTTOM LEFT */
 .wheel-item-5 {
-  bottom: 90px;
-  left: 40px;
+  bottom: 50px;
+  left: 20px;
 }
 
 /* LEFT */
@@ -540,8 +540,8 @@ html {
 
 /* TOP LEFT */
 .wheel-item-7 {
-  top: 90px;
-  left: 40px;
+  top: 50px;
+  left: 20px;
 }
 /* MOBILE */
 
