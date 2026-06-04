@@ -492,6 +492,13 @@ html {
   margin: 20px auto;
 }
 
+/* REQUIRED */
+.treatment-wheel .treatment-circle {
+    position: absolute;
+    width: 160px;
+    text-align: center;
+}
+
 /* TOP */
 .wheel-item-0 {
   top: 0;
@@ -736,11 +743,6 @@ html {
     grid-template-columns: 1fr;
   }
 }
-
-/* REMOVE HOVER EFFECTS FROM TREATMENTS */
-
-.treatment-circle,
-.treatment-circle:hover,
 .treatment-circle img,
 .treatment-circle img:hover {
   transform: none !important;
