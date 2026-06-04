@@ -863,9 +863,6 @@ html {
   transition: all .3s ease;
 }
 
-.treatment-circle:hover {
-  transform: translateY(-8px);
-}
 
 .treatment-circle img {
   width: 160px;
