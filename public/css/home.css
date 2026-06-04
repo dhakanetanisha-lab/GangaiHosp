@@ -748,3 +748,18 @@ html {
   transform: none !important;
   transition: none !important;
 }
+
+.wheel-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wheel-center img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: contain;   /* better for logos */
+    background: white;
+}
