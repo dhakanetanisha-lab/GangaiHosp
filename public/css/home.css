@@ -563,30 +563,88 @@ html {
 @media (max-width: 768px) {
 
   .treatment-wheel {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin: 20px auto 40px;
   }
 
   .wheel-center {
-    display: none;
+    display: block;
+  }
+
+  .wheel-center img {
+    width: 90px;
+    height: 90px;
   }
 
   .treatment-wheel .treatment-circle {
-    position: static;
-    width: 140px;
+    position: absolute;
+    width: 90px;
+    text-align: center;
   }
 
   .treatment-wheel .treatment-circle img {
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 
   .treatment-wheel .treatment-circle span {
-    font-size: 15px;
+    font-size: 11px;
+    line-height: 1.2;
+    margin-top: 6px;
+  }
+
+  /* TOP */
+  .wheel-item-0 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* TOP RIGHT */
+  .wheel-item-1 {
+    top: 35px;
+    right: 10px;
+  }
+
+  /* RIGHT */
+  .wheel-item-2 {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  /* BOTTOM RIGHT */
+  .wheel-item-3 {
+    bottom: 35px;
+    right: 10px;
+  }
+
+  /* BOTTOM */
+  .wheel-item-4 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* BOTTOM LEFT */
+  .wheel-item-5 {
+    bottom: 35px;
+    left: 10px;
+  }
+
+  /* LEFT */
+  .wheel-item-6 {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  /* TOP LEFT */
+  .wheel-item-7 {
+    top: 35px;
+    left: 10px;
   }
 }
 
