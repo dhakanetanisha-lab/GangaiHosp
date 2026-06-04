@@ -487,8 +487,8 @@ html {
 
 .treatment-wheel {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 650px;
+  height: 650px;
   margin: 20px auto;
 }
 
@@ -500,8 +500,11 @@ html {
 }
 
 .treatment-circle span {
+    display: block;
+    width: 100%;
     margin-top: 12px;
     line-height: 1.4;
+    white-space: normal;
 }
 
 /* TOP */
@@ -520,7 +523,7 @@ html {
 /* RIGHT */
 .wheel-item-2 {
   top: 50%;
-  right: 0;
+  right: -30px;
   transform: translateY(-50%);
 }
 
@@ -546,7 +549,7 @@ html {
 /* LEFT */
 .wheel-item-6 {
   top: 50%;
-  left: 0;
+  left: -30px;
   transform: translateY(-50%);
 }
 
