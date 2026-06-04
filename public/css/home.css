@@ -482,128 +482,6 @@ html {
 .essence-marathi {
   max-width: 1000px;
 }
-/* =====================================
-   PERFECT TREATMENT WHEEL
-===================================== */
-
-.treatment-wheel {
-    position: relative;
-    width: 900px;
-    height: 900px;
-    margin: 60px auto;
-}
-
-.wheel-center {
-    position: absolute;
-    width: 220px;
-    height: 220px;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.wheel-center img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-
-    border: 6px solid #6b8e23;
-}
-
-/* ALL TREATMENT ITEMS */
-
-.treatment-wheel .treatment-circle {
-    position: absolute;
-
-    width: 180px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-decoration: none;
-    text-align: center;
-}
-
-.treatment-wheel .treatment-circle img {
-    width: 180px;
-    height: 180px;
-
-    border-radius: 50%;
-    object-fit: cover;
-
-    border: 4px solid #6b8e23;
-}
-
-.treatment-wheel .treatment-circle span {
-    margin-top: 12px;
-
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.4;
-
-    color: #422b23;
-}
-
-/* =====================
-   EXACT POSITIONS
-===================== */
-
-/* TOP */
-.wheel-item-0 {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* TOP RIGHT */
-.wheel-item-1 {
-    top: 120px;
-    right: 70px;
-}
-
-/* RIGHT */
-.wheel-item-2 {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-/* BOTTOM RIGHT */
-.wheel-item-3 {
-    bottom: 120px;
-    right: 70px;
-}
-
-/* BOTTOM */
-.wheel-item-4 {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* BOTTOM LEFT */
-.wheel-item-5 {
-    bottom: 120px;
-    left: 70px;
-}
-
-/* LEFT */
-.wheel-item-6 {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-/* TOP LEFT */
-.wheel-item-7 {
-    top: 120px;
-    left: 70px;
-}
 
 
 /* ==========================
@@ -906,7 +784,7 @@ html {
   transform: scale(1.2);
 }
 
-//* =========================
+/* =========================
    ESSENCE SECTION
 ========================= */
 
@@ -1182,62 +1060,123 @@ html {
 }
 
 /* =====================================
-   CIRCULAR TREATMENT WHEEL
+   FINAL TREATMENT WHEEL
 ===================================== */
 
 .treatment-wheel {
-
   position: relative;
-
-  width: 700px;
-  height: 700px;
-
-  margin: 40px auto 0;
+  width: 900px;
+  height: 900px;
+  margin: 60px auto;
 }
 
 .wheel-center {
-
   position: absolute;
-
-  width: 180px;
-  height: 180px;
-
+  width: 220px;
+  height: 220px;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .wheel-center img {
-
   width: 100%;
   height: 100%;
-
-  border-radius: 50%;
   object-fit: cover;
-
+  border-radius: 50%;
   border: 6px solid #6b8e23;
-
   box-shadow: 0 15px 35px rgba(0,0,0,.15);
 }
 
+/* ALL TREATMENT ITEMS */
+
 .treatment-wheel .treatment-circle {
-
   position: absolute;
-
-  width: 150px;
-
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
   text-align: center;
 }
 
+.treatment-wheel .treatment-circle img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #6b8e23;
+  box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+.treatment-wheel .treatment-circle span {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #422b23;
+}
+
+/* TOP */
+.wheel-item-0 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* TOP RIGHT */
+.wheel-item-1 {
+  top: 120px;
+  right: 70px;
+}
+
+/* RIGHT */
+.wheel-item-2 {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* BOTTOM RIGHT */
+.wheel-item-3 {
+  bottom: 120px;
+  right: 70px;
+}
+
+/* BOTTOM */
+.wheel-item-4 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* BOTTOM LEFT */
+.wheel-item-5 {
+  bottom: 120px;
+  left: 70px;
+}
+
+/* LEFT */
+.wheel-item-6 {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* TOP LEFT */
+.wheel-item-7 {
+  top: 120px;
+  left: 70px;
+}
+
+/* MOBILE */
 
 @media (max-width: 768px) {
 
   .treatment-wheel {
-
     width: 100%;
     height: auto;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1249,11 +1188,18 @@ html {
   }
 
   .treatment-wheel .treatment-circle {
-
     position: static;
     width: 140px;
   }
 
+  .treatment-wheel .treatment-circle img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .treatment-wheel .treatment-circle span {
+    font-size: 15px;
+  }
 }
 
 .treatment-detail-panel {
