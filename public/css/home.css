@@ -287,10 +287,6 @@
   transition: all .3s ease;
 }
 
-.treatment-circle:hover {
-  transform: translateY(-8px);
-}
-
 .treatment-circle img {
   width: 160px;
   height: 160px;
@@ -491,57 +487,9 @@ html {
 
 .treatment-wheel {
   position: relative;
-  width: 900px;
-  height: 900px;
-  margin: 60px auto;
-}
-
-.wheel-center {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-
-.wheel-center img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid #6b8e23;
-  box-shadow: 0 15px 35px rgba(0,0,0,.15);
-}
-
-/* ALL TREATMENT ITEMS */
-
-.treatment-wheel .treatment-circle {
-  position: absolute;
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  text-align: center;
-}
-
-.treatment-wheel .treatment-circle img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #6b8e23;
-  box-shadow: 0 12px 25px rgba(0,0,0,.15);
-}
-
-.treatment-wheel .treatment-circle span {
-  margin-top: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #422b23;
+  width: 750px;
+  height: 750px;
+  margin: 40px auto;
 }
 
 /* TOP */
@@ -553,8 +501,8 @@ html {
 
 /* TOP RIGHT */
 .wheel-item-1 {
-  top: 120px;
-  right: 70px;
+  top: 90px;
+  right: 40px;
 }
 
 /* RIGHT */
@@ -566,8 +514,8 @@ html {
 
 /* BOTTOM RIGHT */
 .wheel-item-3 {
-  bottom: 120px;
-  right: 70px;
+  bottom: 90px;
+  right: 40px;
 }
 
 /* BOTTOM */
@@ -579,8 +527,8 @@ html {
 
 /* BOTTOM LEFT */
 .wheel-item-5 {
-  bottom: 120px;
-  left: 70px;
+  bottom: 90px;
+  left: 40px;
 }
 
 /* LEFT */
@@ -592,10 +540,9 @@ html {
 
 /* TOP LEFT */
 .wheel-item-7 {
-  top: 120px;
-  left: 70px;
+  top: 90px;
+  left: 40px;
 }
-
 /* MOBILE */
 
 @media (max-width: 768px) {
@@ -774,12 +721,6 @@ html {
   width: 100%;
 }
 
-
-/* Space between slider and green header section */
-.slider {
-  margin-bottom: 20px;
-}
-
 @media (max-width: 992px) {
 
   .products-grid {
@@ -794,4 +735,14 @@ html {
 
     grid-template-columns: 1fr;
   }
+}
+
+/* REMOVE HOVER EFFECTS FROM TREATMENTS */
+
+.treatment-circle,
+.treatment-circle:hover,
+.treatment-circle img,
+.treatment-circle img:hover {
+  transform: none !important;
+  transition: none !important;
 }
