@@ -495,8 +495,13 @@ html {
 /* REQUIRED */
 .treatment-wheel .treatment-circle {
     position: absolute;
-    width: 160px;
+    width: 190px;
     text-align: center;
+}
+
+.treatment-circle span {
+    margin-top: 12px;
+    line-height: 1.4;
 }
 
 /* TOP */
