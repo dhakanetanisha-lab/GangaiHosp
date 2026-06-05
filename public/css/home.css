@@ -829,3 +829,155 @@ html {
     object-fit: contain;   /* better for logos */
     background: white;
 }
+
+/* =====================================
+   VIDEOS SECTION
+===================================== */
+
+.videos{
+    padding: 60px 20px;
+    background: #f8f5ef;
+}
+
+.videos-header{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 40px;
+}
+
+.videos-header h4{
+    font-size:38px;
+    color:#2f5d50;
+    margin-bottom:15px;
+    font-family:'Playfair Display', serif;
+}
+
+.videos-header p{
+    font-size:18px;
+    color:#6b5245;
+    line-height:1.7;
+}
+
+/* GRID */
+
+.video-grid{
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* CARD */
+
+.video-card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+}
+
+.video-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+/* THUMBNAIL */
+
+.thumb{
+    position:relative;
+}
+
+.thumb img{
+    width:100%;
+    height:200px;      /* smaller and cleaner */
+    object-fit:cover;
+    display:block;
+}
+
+/* PLAY BUTTON */
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    background:rgba(47,93,80,.9);
+
+    color:white;
+
+    font-size:30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* TITLE */
+
+.video-card h3{
+    padding:16px;
+
+    font-size:20px;
+    line-height:1.4;
+
+    color:#422b23;
+
+    margin:0;
+
+    min-height:80px;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .video-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .videos{
+        padding:40px 15px;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .thumb img{
+        height:180px;
+    }
+
+    .video-card h3{
+        font-size:17px;
+        min-height:auto;
+    }
+
+    .play-btn{
+        width:55px;
+        height:55px;
+        font-size:22px;
+    }
+
+}
