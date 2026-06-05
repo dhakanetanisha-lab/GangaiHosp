@@ -898,7 +898,7 @@ html {
 
 .thumb img{
     width:100%;
-    height:200px;      /* smaller and cleaner */
+    height:160px;      /* smaller and cleaner */
     object-fit:cover;
     display:block;
 }
