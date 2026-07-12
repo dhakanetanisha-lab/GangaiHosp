@@ -1,19 +1,15 @@
 carousel:
   auto_slide_ms: 3000
-
   items:
-    - image: "/icons/page1.jpg"
-      caption: "Authentic Ayurveda"
-      subtext: "Healing rooted in ancient wisdom"
-
-    - image: "/icons/page2.jpg"
-      caption: "Natural Therapies"
-      subtext: "Pure, personalized treatments"
-
-    - image: "/icons/page3.jpg"
-      caption: "Holistic Wellness"
-      subtext: "Balance your body, mind & soul"
-
+    - image: /icons/page1.jpg
+      caption: Authentic Ayurveda
+      subtext: Healing rooted in ancient wisdom
+    - image: /icons/page2.jpg
+      caption: Natural Therapies
+      subtext: Pure, personalized treatments
+    - image: /icons/page3.jpg
+      caption: Holistic Wellness
+      subtext: Balance your body, mind & soul
 groups:
   - caption: Doctor
     images:
@@ -21,8 +17,8 @@ groups:
       - /gallery/DoctorCabin2.JPG
       - /gallery/Doctor1.JPG
       - /gallery/Doctor2.JPG
-      - /gallery/Doctor3.JPG   
-                
+      - /gallery/Doctor3.JPG
+      - gallery/cllg finds.jpg
   - caption: Panchakarma Therapy Session
     images:
       - /gallery/ResearchCenter.jpg
@@ -39,29 +35,24 @@ groups:
       - /gallery/ResearchCenter11.jpg
       - /gallery/ResearchCenter12.jpg
       - /gallery/ResearchCenter13.jpg
-      - /gallery/ResearchCenter14.jpg 
+      - /gallery/ResearchCenter14.jpg
       - /gallery/ResearchCenter15.jpg
       - /gallery/ResearchCenter16.jpg
       - /gallery/ResearchCenter17.jpg
       - /gallery/ResearchCenter18.jpg
-      - /gallery/ResearchCenter19.jpg 
+      - /gallery/ResearchCenter19.jpg
       - /gallery/ResearchCenter20.jpg
       - /gallery/ResearchCenter21.jpg
       - /gallery/ResearchCenter22.jpg
       - /gallery/ResearchCenter23.jpg
       - /gallery/ResearchCenter24.jpg
       - /gallery/ResearchCenter25.jpg
-      - /gallery/ResearchCenter26.jpg 
-      - /gallery/ResearchCenter27.jpg 
+      - /gallery/ResearchCenter26.jpg
+      - /gallery/ResearchCenter27.jpg
       - /gallery/ResearchCenter28.jpg
       - /gallery/ResearchCenter29.jpg
       - /gallery/ResearchCenter30.jpg
-  
   - caption: Hospital Staff
     images:
       - /gallery/HospitalStaff1.JPG
       - /gallery/HospitalStaff2.jpg
-      
-  - caption: Hospital
-    images:
-      - /gallery/HospitalFront.JPG     

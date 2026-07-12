@@ -45,6 +45,7 @@ homedetails:
         text: "Curious? Read More"
 
         link: "/ayurveda.html"
+
     - image: "icons/HistoryOfAyurveda.jpg"
 
       title: "History of Ayurveda"
@@ -99,6 +100,8 @@ videos:
 
     - title: "Daily Ayurveda Routine"
       videoId: "YwxabXeE-hY"
+
+
 
 testimonials:
   title: "Testimonials"

@@ -7,6 +7,9 @@ const { exec } = require('child_process');
 const multer = require('multer');
 const exphbs = require('express-handlebars');
 
+const yaml = require("js-yaml");
+
+
 const app = express();
 app.use(express.json());
 
@@ -198,7 +201,7 @@ if (!fs.existsSync(galleryYml)) {
 const galleryStorage = multer.diskStorage({
   destination: galleryDir,
   filename: (_, file, cb) =>
-    cb(null, Date.now() + '-' + file.originalname)
+    cb(null, file.originalname)
 });
 
 const galleryUpload = multer({ storage: galleryStorage });
@@ -206,13 +209,23 @@ const galleryUpload = multer({ storage: galleryStorage });
 app.post('/admin/upload-gallery', galleryUpload.single('image'), (req, res) => {
   const gallery = yaml.load(fs.readFileSync(galleryYml, 'utf8'));
 
-  gallery.images.push(`gallery/${req.file.filename}`);
+  gallery.groups[0].images.push(`gallery/${req.file.filename}`);
 
   fs.writeFileSync(galleryYml, yaml.dump(gallery));
 
-  exec('node build.js');
+  exec('node build.js', (err) => {
+    if (err)
+        return res.status(500).json({
+            success: false,
+            error: err.message
+        });
 
-  res.json({ success: true, path: `gallery/${req.file.filename}` });
+    res.json({
+        success: true,
+        path: `/gallery/${req.file.filename}`
+    });
+	});
+  
 });
 
 
